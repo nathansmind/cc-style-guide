@@ -1,0 +1,357 @@
+/*	New Bike PDP 	*/
+	
+.custom-select .custom-options { 
+	margin:-4px 0 0 -50px;
+}	
+	
+.page-nav { font-size:18px; padding:10px 0 20px 0; box-shadow:0 2px 4px rgba(0,0,0,0.0); width:100%; z-index:99; }
+	.page-nav .breadcrumb { font-size:12px; margin:15px 0 5px -10px; }
+	.page-nav h1 { margin:0 0 4px 0; }
+	.page-nav .mouse { color:#666; }
+
+
+.container-shadow { background:url(../img/bike/shadow-bottom.png) repeat-x; height:50px; position:absolute; bottom:0px; right:0px; left:0px; z-index:99; }
+
+.color-panel { padding:10px 0; border-bottom:solid 1px #f2f2f2;  }
+	.color-panel img { display:inline-block; margin:5px 5px 0 5px; width:100px; position:relative; z-index:10; }
+	.color-panel .colorway { border:solid 2px #fff; margin:0 5px; display:inline-block; position:relative; cursor:pointer; border-radius:3px; opacity:0.6; }
+		.color-panel .colorway:hover { border:solid 2px #f2f2f2; opacity: 1; }
+	.color-panel .colorway-selected,
+	.color-panel .colorway-selected:hover { border:solid 2px #000; }
+	.colorway-selected {opacity: 1 !important;}
+
+		.video2 {margin-bottom: 5px;}
+		.color-panel .colorways .video { cursor:pointer; display:inline-block; margin:0 5px; padding:5px; position:relative; top:7px; border:solid 2px #fff; }
+		.color-panel .colorways .video2 .video:hover { border:solid 2px #f2f2f2; }
+		.color-panel .colorways .video-wrapper { height:55px; overflow:hidden; }
+		.color-panel .colorways .video2 .video img { margin:-10px 0 0 0; }
+		
+		.play-button {margin-top: -10px;}
+		
+
+.product-sizes { background:#f8f8f8; box-shadow:inset 0 5px 10px rgba(0,0,0,0.1); padding:20px 0; font-size:16px; }
+.colorways { text-align:center; }
+.sizes a { background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(250, 248, 248)), color-stop(0.5, rgb(245, 242, 242)), to(rgb(229, 229, 229))); display:inline-block; font-weight:600; color:#000; border-radius:4px; box-shadow:0 1px 4px rgba(0,0,0,0.3), 0 0 4px rgba(0,0,0,0.3); line-height:41px; margin:5px 5px 5px 0; text-align:center; width:50px; }
+
+.packages { }
+	.packages .custom-select { padding:10px 20px 10px 10px; width:240px; border-radius:5px; }
+	.packages .custom-value { font-size:21px; width:200px; }
+	
+.sku-nav-container { display:block; }
+.sku-nav { background:rgba(255,255,255,0.95); border-bottom:solid 1px #f2f2f2; box-shadow:0 2px 4px rgba(0,0,0,0); text-align:center; width:100%; z-index:999; transition:box-shadow 0.3s ease; -moz-transition:box-shadow 0.3s ease; -webkit-transition:box-shadow 0.3s ease; }
+	.sku-nav a { display:inline-block; font-size:16px; padding:9px 10px; }
+	.sku-nav a.selected { color:#000; font-weight:500; }
+	.sku-nav a span { border:solid 1px #ccc; font-size:12px; border-radius:100px; padding:0; line-height:16px; float:right; margin:2px 0 0 3px; color:#999; width:24px; text-align:center; }
+
+.product-gallery { padding:0 0 20px 0; position:relative; margin:0 auto; min-width:1000px; max-width:1280px; }
+	.product-gallery .main-image { position:relative; margin:0 auto; min-width:1000px; max-width:1220px; }
+		.product-gallery .main-image img { margin:0 auto; width:100%; }
+
+
+		.community-rating { background:url(../img/layout/stars.png) no-repeat left center; display:block; height:38px; width:178px; }
+			.community-rating-0 { background-position:-89px 0; }
+			.community-rating-1 { background-position:-72px 0; }
+			.community-rating-2 { background-position:-54px 0; }
+			.community-rating-3 { background-position:-36px 0; }
+			.community-rating-4 { background-position:-18px 0; }
+			.community-rating-5 { background-position:0 0; }
+
+.anchors { display:block; }
+
+		.product-gallery .detail-pics { position:absolute; left:0px; right:0px; top:0px; bottom:0px; overflow:hidden; }
+			.product-gallery .detail-pics ul { margin:0 auto; width:100000px; }
+				.product-gallery .detail-pics li { background-color:#fff; cursor:pointer; display:block; float:left; width:1000px; }
+			.product-gallery .main-image .detail-pics img { opacity:0; }
+			.product-gallery .main-image .image-placeholder { opacity:0; }
+
+#fullscreen-video { /* background:#000; */ display:none; position:fixed; top:0px; left:0px; right:0px; bottom:0px; z-index:99999; }
+	#fullscreen-video .fullscreen-close { cursor:pointer; background:rgba(0,0,0,1) url(../img/bike/large-close.png) no-repeat center center; background-size:20px 20px; position:absolute; display:block; height:50px; top:0px; right:0px; width:50px; z-index:9; }
+
+/* Full Screen Video */
+
+		
+#fullscreen { background:#fff; display:none; position:fixed; top:0px; left:0px; right:0px; bottom:0px; opacity:1; overflow:hidden; height:100%; width: 100%; z-index:99999; /* -webkit-transform: scale(1.5,1.5); */ }
+	#fullscreen:-webkit-full-screen	{ height:100%; width: 100%; position:static; margin:0; }
+	#fullscreen:-moz-full-screen	{ height:100%; width: 100%; position:static; margin:0; }
+	#fullscreen:-ms-full-screen		{ height:100%; width: 100%; position:static; margin:0; }
+	#fullscreen:-o-full-screen		{ height:100%; width: 100%; position:static; margin:0; }
+	#fullscreen:full-screen			{ height:100%; width: 100%; position:static; margin:0; }
+	#fullscreen .fullscreen-image { background:url(http://localhost:8888/cc5/img/bike/gran_turismo_6700-zoom2.jpg) no-repeat center center; background-size:879px 489px; display:block; position:absolute; right:0px; top:0px; bottom:0px; left:0px; }
+		#fullscreen .fullscreen-image a { opacity:0.2; }
+		#fullscreen .fullscreen-image a.left { border-radius:0 3px 3px 0; position:absolute; left:0px; top:48%; }
+		#fullscreen .fullscreen-image a.right { border-radius:3px 0 0 3px; position:absolute; right:0px; top:48%; }
+	#fullscreen .fullscreen-close { background:url(../img/bike/large-close.png) no-repeat center center; background-size:20px 20px; position:absolute; display:block; height:20px; top:10px; right:10px; width:20px; z-index:9; }
+	#fullscreen .thumbnails { background:#fff; position:absolute; padding:5px; overflow:auto; opacity:1; height:150px; width:1000px; left:50%; margin-left:-500px; -webkit-transition:all 0.3s ease-in-out; }
+		#fullscreen .thumbnails .wrapper { margin:0 auto; overflow:hidden; width:900px; }
+		#fullscreen .thumbnails .wrapper .block { float:left; width:900px; }
+		#fullscreen .thumbnails li { background-repeat:no-repeat; background-size:60px 60px; border:solid 2px #fff; border-radius:3px; cursor:pointer; float:left; padding:2px; margin:3px 2px; width:60px; height:60px; display:block; }
+			#fullscreen .thumbnails li.selected { border:solid 2px #000; }
+	
+		#fullscreen a { background:rgba(0,0,0,0.3); border-radius:3px; display:block; clear:left; opacity:0; padding:10px; transition:all 0.5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
+			#fullscreen a:hover { opacity:0.8; }
+			#fullscreen a.disabled { cursor:default; }
+			#fullscreen .thumbnails:hover a,
+			#fullscreen .thumbnails:hover a.disabled { opacity:0.2; }
+		#fullscreen .thumbnails a.left { position:absolute; left:10px; top:20px; }
+		#fullscreen .thumbnails a.right { position:absolute; right:10px; top:20px; }
+		#fullscreen .thumbnails img { width:16px; }
+
+/* Gallery */
+
+
+
+	#fullscreen .fullscreen-toolbar {  color:#666; font-weight:500; margin:-3px 0 0 -1px; font-size:20px;  padding:15px 20px; width:400px; }
+	#fullscreen .buy { opacity:0; }
+
+.gallery-stage { display:block; left:20px; right:200px; top:0px; position:absolute; z-index:998; }
+	.gallery-stage:hover a.left,
+	.gallery-stage:hover a.right { opacity:1; }
+	.gallery-stage:hover a.disabled { opacity:0.2; }
+	.gallery-stage img { width:32px; margin:5px; }
+	.gallery-stage a { background:rgba(0,0,0,0.3); border-radius:3px; display:block; float:left; clear:left; opacity:0; padding:10px; transition:all 0.5s ease; -moz-transition:all 0.5s ease; -webkit-transition:all 0.5s ease; }
+		.gallery-stage a:hover { background:rgba(0,0,0,0.6); }
+	.gallery-stage a.disabled { opacity:0; }
+	.gallery-stage .zoom-center { position:absolute; top:40px; bottom:40px; left:125px; right:125px; }
+		.gallery-stage .zoom-center:hover a.center { opacity:1; }
+	
+	.gallery-stage a.left { position:absolute; left:0px; top:50%; margin:-25px 0 0 0; }
+	.gallery-stage a.right { position:absolute; right:40px; top:50%; margin:-25px 0 0 0; }
+	.gallery-stage a.center { position:absolute; left:50%; top:50%; margin:-25px 0 0 -25px; }
+
+.description { border-bottom:solid 1px #f2f2f2; font-size:18px; line-height:26px; text-align:center; position:relative; min-width:1000px; max-width:2600px }	
+	.description .container { padding:40px 0 40px 0; }
+	.description h2 { margin:20px 0 40px 0; }
+	.description img { width:100%; }
+	.description .more { display:block; }
+	.description p { margin:20px 0; text-align:left; }
+	.description ul { margin:20px 0; padding:0 0 0 20px; text-align:left; }
+	.description .description-image { border-radius:4px; overflow:hidden; }
+.image-hint { background:url(../img/bike/gran_turismo_6700-zoom2.jpg) no-repeat center top; height:250px; margin:40px auto -50px; position:relative; width:100%; }
+	
+.product-carousel { display:none; overflow:hidden; }
+	.product-carousel .overflow { width: 6000px; }
+	.product-carousel li { float:left; position:relative; }
+	.product-carousel .overlay { background:rgba(0,0,0,0.025); cursor:pointer; display:block; position:absolute; top:0px; left:0px; right:0px; bottom:0px; z-index:999; transition:all 0.3s ease; -moz-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; }
+		.product-carousel .overlay:hover { background:rgba(0,0,0,0.005); }
+	.product-carousel img { height:185px; }
+	
+.image-overflow { position:relative; width:100%; }
+	.image-overflow .shadow { background:url(../img/layout/shadow-left.png) repeat-y left top;  position:absolute; top:0px; left:0px; bottom:0px; width:50px; }
+	.image-overflow img{width:100%;}
+
+.detail-pic { background-size:contain; background-repeat:no-repeat; border-radius:5px; display:block; height:175px; margin:0 auto; width:100%;  }
+
+.tech-specs { }
+	.tech-specs h2 { width:85%; margin-left:15%; font-size: 14px;}
+	.iconimg { display: block; background: url('../img/content/tech-icon.png'); width: 30px; height: 25px; float: left; text-indent: -99999px; position: relative; left: 140px; top: 15px;}
+	.tech-specs table { font-size:14px; float:right; margin:-5px 0 0 0; border:none; text-align:left; width:85%; }
+	.tech-specs tr:nth-child(even) {background: #f2f2f2}
+	.tech-specs td { border:none; font-weight:500; line-height:14px; text-align:left; margin:0; padding:10px; }
+	.tech-specs td:last-child { color:#222; font-weight:200; display:inline-block; text-align:left;  text-transform:capitalize; }
+
+.product-sizing-chart { border-bottom:solid 1px #f2f2f2; padding:40px 0; text-align:center; }
+	.product-sizing-chart h2 { margin:0 0 10px 0; }
+	.product-sizing-chart table { border:solid 1px #f3f3f3; font-size:14px; line-height:14px; }
+		.product-sizing-chart table th { font-size:14px; }
+	.product-sizing-chart img { width:100%; }
+		
+		
+.buy { position:absolute; background:rgba(255,255,255,0.9); box-shadow:0 0 5px rgba(0,0,0,0.2); border:solid 1px #ccc; border-radius:3px; right:20px; top:0px; padding:10px; text-align:left; width:180px; z-index:999; }
+	.buy .ui-button { display:block; padding: 6px 10px; margin:15px 0 0 0; text-align:center; }
+	.buy .custom-select { margin:0; width:160px; }
+	.buy strong { display:block; margin:10px 0 0 0; }
+	.buy .brand-pillar { border-top:solid 1px #eee; color:#999; margin:10px 0; padding:10px 0 0 0; line-height:16px; text-align:center; font-size:16px; }
+		.buy .brand-pillar .emphasis { color:#C00; font-size:18px; font-weight:400; margin:0 0 -2px 0; text-transform:uppercase; }
+		.buy .brand-pillar a { display:block; }
+	.buy .reg { font-size:11px; color:#999; margin:2px 0 0 0; line-height:11px; }
+	.buy .social { display: block; margin:15px -10px -9px -10px; border-radius:0 0 3px 3px; }
+		.buy .social li { display:block; outline:solid 1px #ddd;  text-align:center; padding:5px 0; float:left; width:20%; background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, from(rgb(250, 248, 248)), color-stop(0.5, rgb(245, 242, 242)), to(rgb(229, 229, 229))); }
+			.buy .social li:nth-child(1) { border-radius:0 0 0 2px; }
+			.buy .social li:nth-child(5) { border-radius:0 0 2px 0; }
+			.buy .twitter-animation { background:url(../img/bike/twitter_animation.gif) no-repeat center top; background-size:20px 40px; display:block; height:20px; margin:0 auto; opacity:0.4; width:20px; transition:opacity 0.3s ease; -moz-transition:opacity 0.3s ease; -webkit-transition:opacity 0.3s ease; }
+			.buy .twitter-animation:hover { background-position:center bottom; opacity:1;  }
+		.buy .social li img { margin:0 auto; opacity:0.4; width:20px; transition:opacity 0.3s ease; -moz-transition:opacity 0.3s ease; -webkit-transition:opacity 0.3s ease; }
+			.buy .social li:hover img { opacity:1; }
+		.buy .help a { background:url(../img/bike/info.png) no-repeat center center; background-size:15px 15px; opacity:0.3; float:right; width:16px; height:16px; transition:opacity 0.3s ease; -webkit-transition:opacity 0.3s ease; -moz-transition:opacity 0.3s ease; }
+			.buy .help a:hover { opacity:1; }
+		.buy .sizing-help { cursor:pointer; }
+		.sizing-help2 {font-size: 12px; float: right; color:#666666; text-decoration: underline;}
+	.buy .product-brand { background:url(../img/bike/wilierlogo2012.jpg) no-repeat center center;height:50px;border-bottom:solid 1px #eee;margin:-10px 0 10px 0; }
+	.buy .product-title { display:none; font-weight:bold; line-height:14px; padding:0 0 10px 0; border-bottom:solid 1px #eee; text-align:center; margin:0 0 10px 0; }
+	.buy .primary { background:#f5f5f5; border-top:solid 1px #eee; border-bottom:solid 1px #eee; margin:10px -10px -10px -10px; padding:0 10px 10px 10px; }
+	
+	
+.sku { position:absolute; color:#999; top:450px; right:20px; text-align:center; width:200px; }					
+
+.rich { padding:40px 0 0 0; text-align:center; }
+	.rich h2 { margin:0; }
+	.rich h3 { display:none; }
+
+.featured-video { color:#fff; display:none; background-repeat:no-repeat; background-position:center center; background-size:cover; border-bottom:solid 1px #f2f2f2; font-size:16px; height:300px; position:relative; text-align:center; text-shadow:0 0 5px #000; }
+	.featured-video .youtube-overlay { background:rgba(0,0,0,0.09); display:block; position:absolute; top:0px; left:0px; right:0px; bottom:0px; }
+	.featured-video .container { position:relative; z-index:2; }
+	.featured-video h2 { padding:50px 0 5px 0; }
+	.featured-video a { color:#fff; padding:10px; text-decoration:underline; }
+	.featured-video a.youtube-play { cursor:pointer; display:inline-block; margin:0 auto 5px; padding:0; }
+	.featured-video iframe { display:none; position:absolute; top:0px; left:145px; }
+
+.product-tabs { font-size:18px; margin:20px 0; text-align:center; }
+	.product-tabs a { display:inline-block; margin:0 10px -3px 10px; padding:0; position:relative; }
+	.product-tabs a label { cursor:pointer; border-bottom:solid 2px #fff; line-height:18px;  }
+	.product-tabs a span { background:url(../img/bike/tab_sort.png) no-repeat right center; background-size:16px 16px; border-bottom:solid 2px #fff; display:none; height:20px; margin:0 0 -6px -5px; opacity:0.1; width:18px; transition:opacity 0.3s ease; -moz-transition:opacity 0.3s ease; -webkit-transition:opacity 0.3s ease; }
+		.product-tabs a:hover span { opacity:1; }
+	.product-tabs a.selected label {  border-bottom:solid 2px #fff; color:#000; font-weight:600; }
+	.product-tabs a.selected:after { background:#f2f2f2; box-shadow:inset 5px 5px 10px rgba(0,0,0,0.1); content:""; display:block; height:23px; left:50%; margin:0 0 0 -20px; position:absolute; top:36px; width:23px; z-index:99; transform:rotate(45deg); -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); }
+	.product-tabs a div.ui-tooltip-top { display:none; opacity:1; margin:0 -55px 0 0; right:0px; text-align:left; width:100px; z-index:100; }
+		.product-tabs a div.ui-tooltip-top div { padding:3px 3px 3px 15px; margin:0 -5px; }
+			.product-tabs a div.ui-tooltip-top div:hover { background:#f2f2f2; }
+			.product-tabs a div.ui-tooltip-top div.selected { background:url(../img/bike/checkmark.png) no-repeat center left; background-size:10px 10px; }
+
+.new-community { border-bottom:solid 1px #f2f2f2; font-size:18px; line-height:26px; padding:0 0 40px 0; }
+	.new-community h2 { margin:40px 0 10px 0; }
+	.new-community .community-data { display:block; line-height:22px; margin:10px 0 20px 0; }
+
+	.new-community .profile-pic { background-repeat: no-repeat; background-position:center center; border:solid 4px #f2f2f2; border-radius:100px; height:75px; width:75px; }
+	.new-community .profile-pic-sm { background-repeat: no-repeat; background-position:center center; border:solid 4px #f2f2f2; border-radius:100px; height:50px; width:50px; margin-top:10px; margin-left:20px; }
+	.new-community .profile-date { color:#999; margin:-7px 0 5px 0; font-size:12px; font-style:italic; }
+		.new-community .profile-date div { margin:-10px 0 0 0; }
+		.new-community .profile-date strong { background:url(../img/bike/badge.png) no-repeat right center; color:#000; display:inline-block; font-style:normal; padding:0 20px 0 0;  }
+	
+	.contribution-entry { background:#f2f2f2; box-shadow:inset 0 5px 10px rgba(0,0,0,0.2); margin-bottom:30px; padding:10px 0 5px 0; position:relative; z-index:9; }
+		.contribution-entry span { background:#f3f3f3; padding:5px; display:block;  border-radius:5px;}
+		.contribution-entry input[type="text"],
+		.contribution-entry textarea { font-size:16px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; line-height:24px; padding:11px 20px 11px 10px;width:100%;}
+			.contribution-entry textarea { border-radius:3px 3px 0 0; margin:0px; }
+		.contribution-entry .contribution-main-form { display:none; }
+		.contribution-entry .profile-pic { border:solid 4px #fff; }
+		.contribution-rating-media { background:#fff; border:solid 1px #bbb; border-radius:0 0 3px 3px; margin:-11px 0 10px 0; padding:10px 5px 4px 5px;  }
+		.contribution-entry .ui-button { margin:10px 0 20px 0; }
+		.contribution-entry .contribution-close { background:url(../img/bike/large-close.png) no-repeat center center; background-size:20px 20px; cursor:pointer; display:block; display:none; width:20px; height:20px; position:absolute; right:10px; top:15px }
+		.contribution-entry .contribution-entry-field { margin:10px 0; position:relative; }
+		.contribution-entry .contribution-entry-field .contribution-clear { background:url(../img/bike/large-close.png) no-repeat center center; background-size:20px 20px; cursor:pointer; display:none; opacity:0.3; width:20px; height:20px; position:absolute; right:5px; top:5px }
+			.contribution-entry .contribution-entry-field .contribution-clear:hover { opacity:1; }
+		.contribution-entry .contribution-entry-field .contribution-limit { font-size:14px; color:#999; display:block; cursor:pointer; position:absolute; right:5px; bottom:0px; }
+		.contribution-entry .contribution-add-photo { float:right; margin-top:-3px; cursor:pointer; }
+		
+		
+.product-contribution {margin:10px 0; }
+	.product-contribution .community-rating { margin:25px 0 0 0; }
+	.product-contribution h3 { margin:10px 0 0 0; }
+.product-contribution-sm { border-top:solid 1px #f2f2f2; font-size:16px; line-height:24px; padding-bottom:10px; }
+	.product-contribution-sm h5 { margin:10px 0 0 0; }
+
+.contribution-flag { background:#f2f2f2; box-shadow:inset 0 5px 10px rgba(0,0,0,0.2); border-top:solid 1px #f2f2f2; clear:both; display:none; margin:20px 0 0 0; }
+	.contribution-flag .wrapper { padding:20px; }
+	.contribution-flag input { font-size:16px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; margin:10px 5px 10px 0;padding:8px 10px; width:300px; }
+	
+.contribution-social { padding:5px 0 0 0; }
+	.contribution-social a { float:right; margin:0 0 0 5px; }
+		.contribution-social a:hover img { opacity:1; }
+	.contribution-social a.api { float:left; margin:0; }
+		.contribution-social a img { float:left; height:20px; opacity:0.1; width:20px; transition:opacity 0.3s ease; -moz-transition:opacity 0.3s ease; -webkit-transition:opacity 0.3s ease; }
+
+.community-comment-input { border-top:solid 2px #f2f2f2; border-bottom:solid 2px #f2f2f2; padding:10px 0; text-align:right; margin-bottom: 40px; }
+	.community-comment-input input { font-size:16px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; margin:0 5px 0 0; padding:8px 10px;width:100%;}
+
+.community-comment-form { background:#f2f2f2; box-shadow:inset 0 5px 10px rgba(0,0,0,0.2); border-bottom:solid 1px #f2f2f2; display:none;  }
+	.community-comment-form .wrapper { padding:20px 0; margin:0 20px; }
+	.community-comment-form textarea { display:block; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; margin:5px 0 10px 0; height:100px; width:100%; }
+	
+	.community-comment-media { font-size:14px; line-height:16px; }
+		.community-comment-media .media-row { color:#999; float:left; margin:0 0 20px 0; width:300px; }
+		.community-comment-media .label { float:left; margin:0 10px 0 0; width:100px; } 
+		.community-comment-media input[type="text"] { font-size:16px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; margin:0; padding:5px 10px; width:100%; }
+		.community-comment-media input[type="file"] { margin:5px 0 0 0; }
+
+
+.video-content,
+.photo-content,
+.question-content { display:none; }
+
+/* Star Ratings Styles */	
+.product-rating { background:url(../img/layout/stars.png) no-repeat left center; background-size:236px 20px; display:inline-block; height:20px; margin:0 auto; width:120px; }
+	.product-rating-0 { background-position:-120px 0; }
+	.product-rating-1 { background-position:-96px 0; }
+	.product-rating-2 { background-position:-72px 0; }
+	.product-rating-3 { background-position:-48px 0; }
+	.product-rating-4 { background-position:-24px 0; }
+	.product-rating-5 { background-position:0 0; }
+
+
+
+	.amazingslider-play-0 {
+		opacity: .7;
+		transition: opacity .2s linear;
+	}
+	.amazingslider-play-0:hover {
+		opacity: .9;
+	}
+	
+
+	.slider-zoom {
+		background: black;
+		width:30px;
+		height: 30px;
+		padding: 10px;
+		border-radius: 4px;
+		opacity: .3;
+	}
+	.slider-zoom:hover {
+		opacity:.7;
+	}
+	.link-state {
+	float: left;
+	position: relative;
+	z-index: 1;
+	}
+	
+	.contribution-helpful {
+		
+	}
+
+.no-border {border: none;}
+
+		.full-title {margin: 10px !important;}
+		.full-columns {margin: 10px;}
+		.full-contain { min-width: 768px; max-width: 1200px; margin: auto; }
+		.image-div {width: 80%; float:left; position: relative;}
+		.image-div .left {position: absolute; left: 0px; top: 50%; margin: -25px 0 0 0;}
+		.full-image {width: 100%; display: block; margin: auto; max-width: 900px; float: left; clear:none !important;}
+		.image-div .right {float: left;	width: 32px; position: absolute; right: 0px; top: 50%; margin: -25px 0 0 0;}
+		
+		.full-thumbs {width:17%; display: block; float: left; margin-left: 20px;}
+		.full-thumbs img {width: 100%; max-width: 200px;border: 1px solid #f2f2f2;}
+		.full-thumbs ul {width: 100%; float:left;}
+		.full-thumbs li {float: left; width: 26%; max-width: 200px; margin-right: 10px; margin-bottom: 10px; cursor:pointer;}
+		.full-thumbs img:hover   {border: 1px solid #000;}
+
+/*
+
+.full-title {margin: 10px !important;}
+.fullscreen-image {position: relative; width: 100%}
+.centered { width:100%; max-width: 900px}
+.image-div2 {}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

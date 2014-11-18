@@ -1,0 +1,59 @@
+.btn.dark {
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #555), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #555, #000000);
+  background: -moz-linear-gradient(top, #555, #000000);
+  -pie-background: linear-gradient(top, #555, #000000);
+  background: linear-gradient(top, #555, #000000);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  font-family: ProximaNova, sans-serif;
+  line-height: 1;
+  overflow: hidden;
+  padding: 10px 18px;
+  text-transform: uppercase; }
+  .btn.dark:hover {
+    background: #222;
+    color: #fff; }
+.btn.light {
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
+  background: -webkit-linear-gradient(top, #ffffff, #f5f5f5);
+  background: -moz-linear-gradient(top, #ffffff, #f5f5f5);
+  -pie-background: linear-gradient(top, #ffffff, #f5f5f5);
+  background: linear-gradient(top, #ffffff, #f5f5f5);
+  border-color: #f2f2f2 #f2f2f2 #ccc #f2f2f2;
+  border-style: solid;
+  border-width: 1px;
+  background: linear-gradient(top, #555555, #000000);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  color: #333;
+  font-family: ProximaNova, sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  overflow: hidden;
+  padding: 10px 18px;
+  text-transform: uppercase; }
+  .btn.light:hover {
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ebebeb));
+    background: -webkit-linear-gradient(top, #ffffff, #ebebeb);
+    background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+    -pie-background: linear-gradient(top, #ffffff, #ebebeb);
+    background: linear-gradient(top, #ffffff, #ebebeb);
+    color: #333; }
+
+.small-space {
+  margin: 10px 0; }
+
+.med-space {
+  margin: 20px 0; }
+
+.large-space {
+  margin: 40px 0; }

@@ -1,0 +1,17 @@
+/*
+	InitStudio.com | Screen Styles | Last Updated: August 27, 2010
+	CSS properties are always listed in alphabetical order: A - Z
+*/
+
+/*	Resets all basic html elements so that they do not inherit default classes */
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol, li, dl, dt, dd, form, a, fieldset, input, th, td, header, footer, article, section, nav, menu, hgroup, aside { border:0; margin:0; outline:none; padding:0; list-style-type:none; }
+body { font-size: 100%; line-height: 155%; }
+:focus { outline:none; }
+a:link, a:active, a:hover, a:visited { text-decoration:none; }
+
+
+/* To ensure that the new HTML5 elements render correctly as block level elements	*/
+header, footer, article, section, nav, menu, hgroup, aside { display: block; }
+
+/* Gets ride of the margin below and image for some browsers */
+img { display:block; margin:0; padding:0; }

@@ -1,0 +1,176 @@
+/* line 5, ../../sass/general/typography.scss */
+body {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Default fonts and colors. */
+/* line 9, ../../sass/general/typography.scss */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, input, textarea {
+  font-family: "ProximaNova", sans-serif;
+  color: #222222;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+/* line 15, ../../sass/general/typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px 0;
+}
+
+/* line 17, ../../sass/general/typography.scss */
+h1 {
+  font-size: 24px;
+  color: #cc0000;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+/* line 24, ../../sass/general/typography.scss */
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+/* line 29, ../../sass/general/typography.scss */
+h3 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/* line 33, ../../sass/general/typography.scss */
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 37, ../../sass/general/typography.scss */
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* line 42, ../../sass/general/typography.scss */
+h6 {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+/* Text elements
+-------------------------------------------------------------- */
+/* line 52, ../../sass/general/typography.scss */
+p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 5px 0;
+}
+
+/* line 59, ../../sass/general/typography.scss */
+ul {
+  list-style-type: circle;
+}
+
+/* line 60, ../../sass/general/typography.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 63, ../../sass/general/typography.scss */
+dl dt {
+  font-weight: bold;
+}
+
+/* line 66, ../../sass/general/typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #000;
+}
+
+/* line 67, ../../sass/general/typography.scss */
+address {
+  margin-top: 1.5em;
+  font-style: italic;
+}
+
+/* line 68, ../../sass/general/typography.scss */
+del {
+  color: #000;
+}
+
+/* line 70, ../../sass/general/typography.scss */
+a {
+  color: #999999;
+  text-decoration: none;
+}
+
+/* line 71, ../../sass/general/typography.scss */
+a:hover {
+  color: #222222;
+}
+
+/* line 74, ../../sass/general/typography.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 75, ../../sass/general/typography.scss */
+em, dfn {
+  font-style: italic;
+}
+
+/* line 76, ../../sass/general/typography.scss */
+dfn {
+  font-weight: bold;
+}
+
+/* Tables
+-------------------------------------------------------------- */
+/* line 83, ../../sass/general/typography.scss */
+th {
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+}
+
+/* line 84, ../../sass/general/typography.scss */
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 85, ../../sass/general/typography.scss */
+th, td {
+  padding: 4px 10px 4px 0;
+}
+
+/* line 86, ../../sass/general/typography.scss */
+tfoot {
+  font-style: italic;
+}
+
+/* line 87, ../../sass/general/typography.scss */
+caption {
+  background: #ffc;
+}
+
+/* Some default classes
+-------------------------------------------------------------- */
+/* line 93, ../../sass/general/typography.scss */
+.small, small {
+  font-size: 12px;
+}
+
+/* line 94, ../../sass/general/typography.scss */
+.large {
+  font-size: 18px;
+}
+
+/* line 97, ../../sass/general/typography.scss */
+.hide {
+  display: none;
+}
+
+/* line 98, ../../sass/general/typography.scss */
+.highlight {
+  background: #ffc;
+}
