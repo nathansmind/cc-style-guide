@@ -1,0 +1,104 @@
+
+// Primary Colors
+//--------------------
+$red: #CC0000;
+$red-highlight: #ca2926;
+$black: #222;
+$white: #fff;
+
+// Secondary Colors
+//--------------------
+
+$gray-light: #bfbfbf;
+$gray-lighter: #ccc; 
+$gray-lightest: #f2f2f2;
+$gray-dark: #999;
+$gray-darker: #555;
+$gray-darkest: #333;
+
+
+//Subordinate Colors
+//--------------------
+$yellow: #ff9900;
+$blue: #00aeef;
+$blue-light: #f3f6fa;
+
+// Facet color family
+//--------------------
+$facet-beige: #efb780;
+$facet-black: #000;
+$facet-blue: #369;
+$facet-brown: #963;
+$facet-gray: #ccc;
+$facet-green: #093;
+$facet-orange: #f93;
+$facet-pink: #f39;
+$facet-purple: #639;
+$facet-red: #f00;
+$facet-white: #fff;
+$facet-yellow: #ff0;
+
+
+// Background
+// -------------------
+$background-gradient: linear-gradient(top, $gray-dark, $black);
+
+// Button
+// -------------------
+$btn-icon-inner-padding: 10px;
+$btn-icon-outer-padding: 20px;
+$btn-icon-position: left;
+$btn-icon-size: 16px;
+$btn-small-icon-inner-padding: 10px;
+$btn-small-icon-outer-padding: 15px;
+
+// CSS3
+// -------------------
+// Radius
+$radius-x-small: 3px;
+$radius-small: 4px;
+
+$text-sans-serif-primary: ProximaNova, sans-serif;
+$text-sans-serif-secondary: Helvetica, sans-serif;
+$text-monospaced: 'Courier New', monospace;
+
+
+// Text font weight
+$text-bold: 900;
+$text-light: 200;
+$text-semibold: 500;
+
+// Text sizes.
+$text-int: 15px;
+$text-xx-small: 10px;
+$text-x-small: 11px;
+$text-small: 12px;
+$text-medium: 14px;
+$text-large: 16px;
+$text-x-large: 18px;
+$text-xx-large: 20px;
+$text-xxx-large: 24px;
+
+// mobile test sizes (these values need to change later, when we start responsive for competitive)
+$text-xx-small-mbl: 14px;
+$text-x-small-mbl: 12px;
+$text-small-mbl: $text-xx-small-mbl; // Need to duplicate this in order to use the font-size mixin.
+$text-int-mbl: 16px;
+$text-medium-mbl: 16px;
+$text-large-mbl: 18px;
+$text-x-large-mbl: 20px;
+$text-xx-large-mbl: 22px;
+$text-xxx-large-mbl: 24px;
+
+//Spacing
+$space-small: .4020em;
+$space-normal: 0.833em;
+$space-large: 1.44em;
+$space-xlarge: 2.074em;
+
+
+
+
+
+
+

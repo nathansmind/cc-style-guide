@@ -1,0 +1,158 @@
+// Typography
+
+@import "../helpers/variables";
+
+/*
+body { font-size: 16px; line-height: 24px;}
+ 
+ 
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea { font-family:"ProximaNova", sans-serif; color: $black; }
+ 
+ 
+ 
+h1,h2,h3,h4,h5,h6 { margin: 5px 0; text-transform: uppercase;}
+ 
+h1 { 
+	font-size: 24px;
+	color: $red;
+	font-weight: 400;
+	line-height: 30px;
+	margin: 20px 0 5px 0;
+ }
+h2 { 
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 25px;
+ }
+h3 { 
+	font-size: 18px;
+	line-height: 25px;
+ }
+h4 { 
+	font-size: 16px;
+	line-height: 20px;
+ }
+h5 { 
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+ }
+h6 { 
+	font-size: 10px;
+	line-height: 15px;	 
+ }
+ 
+ 
+ 
+p { 
+	font-size: 16px;
+	line-height: 24px;
+	margin: 5px 0;
+}
+
+// Links
+a { color: $gray-darker; text-decoration: none; }
+a:hover { color: $black; }
+
+
+// Lists
+dd, dt, dl, li, ol, ul {
+margin: 10px 0;
+}
+
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+ 
+dl {  }
+dl dt { font-weight: bold; }
+dl dd { }
+
+// Misc
+abbr, acronym { }
+address { margin-top: 1.5em; font-style: italic; }
+del { color: #000; }
+ 
+blockquote { margin: 0 10px; }
+strong { font-weight: bold; }
+em, dfn { font-style: italic; }
+dfn { font-weight: bold; }
+sup, sub { position: relative; top: -0.25em; font-size: 12px; line-height: 15px;}
+sup { top: -0.25em;}
+sub { top: 0.25em;}
+cite {font-style: italic;}
+*/
+
+
+
+// Typography 1.200 Minor Third
+
+@import "../helpers/variables";
+
+html {font-size: 16px;}
+
+/* Default fonts and colors. */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea { font-family:"ProximaNova", arial, sans-serif; color: $black; line-height: 1.5em; -webkit-font-smoothing: antialiased !important;}
+ 
+ 
+/* Headings
+-------------------------------------------------------------- */
+
+ h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  font-family:"ProximaNovaCond", arial, sans-serif;
+}
+ 
+ 
+h1 {font-size: 2.074em; line-height: 1.1em; color: $red; font-weight: 300;} 
+h2 {font-size: 1.728em; line-height: 1.2em;}
+h3 {font-size: 1.44em; line-height: 1.3em; margin-bottom: 1.05em;}
+h4 {font-size: 1.2em; line-height: 1.4em; font-weight: bold; margin-bottom: 0;}
+h5 {font-size: 1em; line-height: 1.5em; font-weight: bold; margin-bottom: 0;}
+h6 {font-size: 1em; line-height: 1.5em; font-weight: bold; margin-bottom: 0;}
+ 
+ 
+/* Text elements
+-------------------------------------------------------------- */
+ 
+p {margin-bottom: 1.5em;}
+small, .font_small {font-size: 0.833em;}
+.font-extra-small {font-size: 0.694em;}
+
+
+.space {margin: 0.833em;}
+.space-smalln {margin: 0.694em;}
+.space-xsmall {margin: 0.579em;}
+
+// Links
+a { color: $gray-darker; text-decoration: none; }
+a:hover { color: $black; }
+
+
+// Lists
+dd, dt, dl, li, ol, ul {
+margin: 10px 0;
+}
+
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
+ 
+dl {  }
+dl dt { font-weight: bold; }
+dl dd { }
+
+// Misc
+abbr, acronym { }
+address { margin-top: 1.5em; font-style: italic; }
+del { color: #000; }
+ 
+blockquote { margin: 0 10px; }
+strong { font-weight: bold; }
+em, dfn { font-style: italic; }
+dfn { font-weight: bold; }
+sup, sub { position: relative; top: -0.25em; font-size: 12px; line-height: 15px;}
+sup { top: -0.25em;}
+sub { top: 0.25em;}
+cite {font-style: italic;}
+

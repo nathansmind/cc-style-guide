@@ -1,9 +1,12 @@
 
 
-@import "general/reset"; 
-@import "general/webfonts";
-@import "general/grid";
-@import "general/typography"; 
-@import "general/typography-mobile"; 
-@import "general/page-components"; 
+@import "base/reset"; 
+@import "base/webfonts";
+@import "base/typography"; 
+@import "base/typography-mobile";
+@import "layout/grid";
+@import "layout/header"; 
+@import "components/page-components"; 
 
+@import "pages/style-guide"; 
+@import "pages/icons"; 

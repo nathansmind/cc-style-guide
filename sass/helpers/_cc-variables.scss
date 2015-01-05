@@ -1,0 +1,102 @@
+$blue: #00aeef;
+$blue-light: #f3f6fa;
+$gray-dark: #555;
+$gray-darker: #999;
+$gray-darkest: #333;
+$gray-lightest: #f2f2f2;
+$red: #CC0000;
+$red-highlight: #ca2926;
+$yellow: #ff9900;
+
+// Background
+// -------------------
+$background-gradient: linear-gradient(top, $gray-dark, $black);
+
+// Button
+// -------------------
+$btn-icon-inner-padding: 10px;
+$btn-icon-outer-padding: 20px;
+$btn-icon-position: left;
+$btn-icon-size: 16px;
+$btn-small-icon-inner-padding: 10px;
+$btn-small-icon-outer-padding: 15px;
+
+// CSS3
+// -------------------
+// Radius
+$radius-x-small: 3px;
+$radius-small: 4px;
+
+// Icon
+// -------------------
+$icon-arrow-color: $black;
+$icon-inner-padding: 10px;
+$icon-outer-padding: 10px;
+$icon-position: left;
+$icon-size: 16px;
+
+// Define sprite maps
+$icons-12-map: sprite-map("competitivecyclist/icon-12/*.png"); 
+$icons-16-map: sprite-map("competitivecyclist/icon-16/*.png"); 
+$icons-24-map: sprite-map("competitivecyclist/icon-24/*.png"); 
+$icons-32-map: sprite-map("competitivecyclist/icon-32/*.png"); 
+$icons-48-map: sprite-map("competitivecyclist/icon-48/*.png"); 
+$icons-64-map: sprite-map("competitivecyclist/icon-64/*.png"); 
+
+// Palette
+// -------------------
+$de-emphasized: $gray-lighter;
+
+// Rating
+// -------------------
+$rating-opacity: 0.15;
+
+// Text
+// -------------------
+// http://compass-style.org/reference/compass/typography/vertical_rhythm/
+$base-line-height: 18px;
+$round-to-nearest-half-line: true;
+
+$text-sans-serif-primary: ProximaNova, sans-serif;
+$text-sans-serif-secondary: Helvetica, sans-serif;
+$text-monospaced: 'Courier New', monospace;
+
+$text-emphasized: $red;
+
+// Text font weight
+$text-bold: 900;
+$text-light: 200;
+$text-semibold: 500;
+
+// Text sizes.
+$text-int: 15px;
+$text-xx-small: 10px;
+$text-x-small: 11px;
+$text-small: 12px;
+$text-medium: 14px;
+$text-large: 16px;
+$text-x-large: 18px;
+$text-xx-large: 20px;
+$text-xxx-large: 24px;
+
+// mobile test sizes (these values need to change later, when we start responsive for competitive)
+$text-xx-small-mbl: 14px;
+$text-x-small-mbl: 12px;
+$text-small-mbl: $text-xx-small-mbl; // Need to duplicate this in order to use the font-size mixin.
+$text-int-mbl: 16px;
+$text-medium-mbl: 16px;
+$text-large-mbl: 18px;
+$text-x-large-mbl: 20px;
+$text-xx-large-mbl: 22px;
+$text-xxx-large-mbl: 24px;
+
+// Text subscript and superscript.
+$text-subscript-bottom: -0.25em;
+$text-subscript-size: $text-small;
+$text-superscript-top: -0.25em;
+$text-superscript-size: $text-small;
+
+// PDP Gallery width:
+$image-gallery-width: 780px;
+$gallery-height: 470px;
+$arrows-size: 50px;

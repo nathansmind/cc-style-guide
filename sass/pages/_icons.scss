@@ -1,0 +1,26 @@
+.icons {
+	.icon-grid {
+		float: left;
+		li {
+			float: left;
+			width: 18%;
+			list-style: none;
+			text-align: center;
+			margin: 20px .5%;
+			border: 1px solid #f2f2f2;
+			padding: 20px;
+			span {
+				width: 100%;
+				&:first-child {
+					font-size: 40px;
+					color: #222;
+					float: left;
+				}
+				&:nth-child(2) {
+					float: left;
+					height: 30px;
+				}
+			}
+		}
+	}	
+}

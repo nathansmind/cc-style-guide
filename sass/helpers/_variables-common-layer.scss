@@ -1,0 +1,132 @@
+$beige: #b2a992;
+$black: #000;
+$blue: #1c12d8;
+$blue-highlight: #39c;
+$de-emphasized: #eee;
+$gray: #b5b5b5; // 50%
+$green: #249a08;
+$gray-dark: #333; // 20%
+$gray-darker: #666; // 40%
+$gray-darkest: #1a1a1a; // 10%
+$gray-light: #ccc; // 80%
+$gray-lighter: #999; // 60%
+$gray-lightest: #e5e5e5; // 90%
+$orange: #ed7f00;
+$red: #d41e07;
+$white: #fff;
+
+// Facet color family
+//--------------------
+$facet-beige: #efb780;
+$facet-black: #000;
+$facet-blue: #369;
+$facet-brown: #963;
+$facet-gray: #ccc;
+$facet-green: #093;
+$facet-orange: #f93;
+$facet-pink: #f39;
+$facet-purple: #639;
+$facet-red: #f00;
+$facet-white: #fff;
+$facet-yellow: #ff0;
+
+// Button
+// -------------------
+$btn-icon-arrow-inner-padding: 10px;
+$btn-icon-arrow-outer-padding: 10px;
+$btn-icon-inner-padding: 10px;
+$btn-icon-outer-padding: 20px;
+$btn-icon-position: left;
+$btn-icon-size: 16px;
+$btn-small-icon-inner-padding: 10px;
+$btn-small-icon-outer-padding: 15px;
+$inactive-opacity: .25;
+
+// CSS3
+// -------------------
+// http://compass-style.org/reference/compass/support/
+$experimental-support-for-opera: false;
+
+// Placeholder.
+$placeholder-color: $gray;
+$placeholder-font-family: inherit;
+$placeholder-font-style: inherit;
+$placeholder-font-weight: inherit;
+
+// Transitions.
+$transition-attributes: all;
+$transition-easing: ease;
+
+$transition-speed-fast: 0.3s;
+$transition-speed-normal: 0.5s;
+$transition-speed-slow: 1s;
+$transition-speed-slower: 1.5s;
+
+// Grid
+// -------------------
+$grid-columns: 10;
+$grid-mobile-columns: 3;
+$grid-mobile-portrait-columns: 2;
+$grid-space: 1;
+$grid-tablet-portrait-columns: 8;
+$grid-width: 1000px;
+$grid-max-width: 1400px;
+$grid-min-width: 980px;
+
+// Radius
+$radius-small: 3px;
+
+// Icon
+// -------------------
+$icon-arrow-color: $white;
+$icon-arrow-size: 10px;
+$icon-inner-padding: 10px;
+$icon-outer-padding: 10px;
+$icon-position: left;
+$icon-size: 16px;
+
+// Palette
+// -------------------
+$regular: $black;
+
+// Rating
+// -------------------
+$rating-opacity: 0.25;
+
+// Responsive
+// -------------------
+$breakpoints-enabled: false;
+
+// https://github.com/canarymason/breakpoint
+$breakpoint-default-feature: 'max-width';
+$breakpoint-to-ems: false;
+
+// https://github.com/snugug/respond-to
+$breakpoints: 'tablet' (64em),
+    'tablet portrait' (64em, orientation portrait),
+    'mobile' (40em),
+    'mobile portrait' (40em, orientation portrait);
+
+// Space
+// -------------------
+$space-increment: 10px;
+
+// Text
+// -------------------
+// http://compass-style.org/reference/compass/typography/vertical_rhythm/
+$base-font-size: 14px;
+$base-line-height: 20px;
+$font-unit: 14px;
+$relative-font-sizing: false;
+
+$text-subscript-bottom: -0.25em;
+$text-subscript-size: 75%;
+$text-superscript-top: -0.5em;
+$text-superscript-size: 75%;
+
+$text-small: 12px;
+
+// Other
+// -------------------
+// browser support: http://compass-style.org/reference/compass/support/
+$legacy-support-for-ie: false;

@@ -1,0 +1,10 @@
+//  Mobile headers
+ 
+@import "../helpers/variables"; 
+ 
+@media (max-width : 480px) {
+	
+body { font-size: 14px; line-height: 20px;}
+
+
+} // End media query

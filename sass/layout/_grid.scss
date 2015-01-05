@@ -1,0 +1,108 @@
+// Grid
+
+@import "../helpers/variables";
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.true-grid {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.true-grid {
+	div.column {
+		background: $gray-light;
+		margin: 10px 0;
+		text-align: center;
+		padding: 20px 0;
+	}
+	div.column:nth-child(2n+2) {
+		background: $gray-dark;
+	}
+	.column {
+		float: left;
+	}
+	.grid-12 {
+		width: 100%;
+	}
+	.grid-11 {
+		width: 91.66%;
+	}
+	.grid-10 {
+		width: 83.33%;
+	}
+	.grid-9 {
+		width: 75%;
+	}
+	.grid-8 {
+		width: 66.66%;
+	}
+	.grid-7 {
+		width: 58.33%;
+	}	
+	.grid-6 {
+		width: 50%;
+	}
+	.grid-5 {
+		width: 41.66%;
+	}	
+	.grid-4 {
+		width: 33.33%;
+	}	
+	.grid-3 {
+		width: 25%;
+	}
+	.grid-2 {
+		width: 16.66%;
+	}
+	.grid-1 {
+		width: 8.33%;
+	}
+}
+
+.mobile-grid {
+	max-width: 460px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.mobile-grid {
+	div.column {
+		background: $gray-light;
+		margin: 10px 0;
+		text-align: center;
+		padding: 20px 0;
+	}
+	div.column:nth-child(2n+2) {
+		background: $gray-dark;
+	}
+	.column {
+		float: left;
+	}
+	.full {
+		width: 100%;
+	}
+	.half {
+		width: 50%;
+	}
+	.twothirds{
+		width: 75%;
+	}
+	.five8 {
+		width: 62.5%;
+	}
+	.three8 {
+		width: 37.5%;
+	}
+	.quarter {
+		width: 25%;
+	}
+	.eighth {
+		width: 12.5%;
+	}	
+}
