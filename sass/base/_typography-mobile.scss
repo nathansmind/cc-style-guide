@@ -4,7 +4,42 @@
  
 @media (max-width : 480px) {
 	
-body { font-size: 14px; line-height: 20px;}
+html {font-size: 16px;}
+
+/* Default fonts and colors. */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea { font-family:"ProximaNova", arial, sans-serif; color: $black; line-height: 1.5em; -webkit-font-smoothing: antialiased !important;}
+ 
+ 
+/* Headings
+-------------------------------------------------------------- */
+
+ h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  font-family:"ProximaNovaCond", arial, sans-serif;
+}
+ 
+ 
+h1 {font-size: 1.602em; line-height: 1.1em; color: $red; font-weight: 300;} 
+h2 {font-size: 1.424em; line-height: 1.2em;}
+h3 {font-size: 1.266em; line-height: 1.3em; margin-bottom: 1.05em;}
+h4 {font-size: 1.125em; line-height: 1.4em; font-weight: bold; margin-bottom: 0;}
+h5 {font-size: 1em; line-height: 1.5em; font-weight: bold; margin-bottom: 0;}
+h6 {font-size: 1em; line-height: 1.5em; font-weight: bold; margin-bottom: 0;}
+ 
+ 
+/* Text elements
+-------------------------------------------------------------- */
+ 
+p {margin-bottom: 1.5em;}
+small, .font_small {font-size: 0.79em;}
+.font-extra-small {font-size: 0.702em;}
+
+
+.space {margin: 0.833em;}
+.space-small {margin: 0.694em;}
+.space-xsmall {margin: 0.579em;}
 
 
 } // End media query

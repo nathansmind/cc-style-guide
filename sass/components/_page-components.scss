@@ -52,6 +52,8 @@ caption { margin-bottom: 10px; text-align: -webkit-center; text-align: center; }
 
 hr { display: block; height: 1px; border: 0; border-top: 1px solid $gray-lighter; margin: 30px 0; padding: 0; }
 
+ul {list-style: none;}
+
 /* Form Fields
 -------------------------------------------------------------- */
 
@@ -298,8 +300,8 @@ label {font-weight: bold;}
 		margin-bottom: .75em;
 		float: left;
 		background: $gray-lightest;
-		width: 95%;
-		padding: .325em .75em;
+		width: 100%;
+		padding: .325em 0;
 		border: 1px solid $gray-lighter;
 		position: relative;
 		cursor: pointer;
@@ -309,13 +311,16 @@ label {font-weight: bold;}
 		-moz-border-radius: 2px;
 		-ms-border-radius: 2px;
 		border-radius: 2px;
+		div {
+			padding: 0 .75em;
+		}
 		span {
 			float: right;
-			font-size: 30px;
+			font-size: 20px;
 			border-left: 1px solid #ccc;
 			position: absolute;
 			right: -1px;
-			padding: 4px 4px 2px;
+			padding: 8px 8px 8px;
 			top: -1px;
 			color: $gray-darker;
 		}
@@ -539,7 +544,7 @@ label {font-weight: bold;}
 }
 
 
-header {
+.main-header {
 	position: fixed;
 	width: 100%;
 	z-index: 100;
@@ -596,7 +601,9 @@ header {
 		}
 	}
 	.main-nav {
+		position: relative;
 		background: #fff;
+		border-bottom: 2px solid #ccc;
 		.header-wrapper {
 			position: relative;
 		}
@@ -606,19 +613,23 @@ header {
 			padding: 10px 0;
 		}
 		.form-fields {
-			padding: .75em 10px 0 25px;
-			position: relative;	
+			padding-top: 0.55em;
+			position: absolute;
+			left: 162px;
+			right: 620px;	
 			float: left;	
-			width: 23%;
-			margin-bottom: .75em;
+			margin-bottom: .65em;
 		}
 		form {
+			width: 100%;
 			input {
 				margin: 0 !important;
+				background: #fff;
 			}
 		}
 		ul {
-			float: right;
+			position: absolute;
+			right: 0;
 			list-style: none;
 			margin: 0;
 			li {
@@ -626,22 +637,23 @@ header {
 				margin: 0;
 				a {
 					display: block;
-					padding: 18px .75em;
+					padding: 15px 0.75em;
 					&:hover {background: #f2f2f2;}
 				}
-				&:last-child a {padding-right: 0;}
 			}
-		}
-		.targeter {
-			p {
-				margin: 0;
-				line-height: 2.15em;
-				color: #c00;
-			}
-			text-align: center;
-			background: #cccccc;
 		}
 	}
+}
+
+.targeter {
+	padding-top: 88px;			
+	p {
+		margin: 0;
+		line-height: 2.5em;
+		color: #333;
+	}
+	text-align: center;
+	background: #f2f2f2;
 }
 
 
@@ -716,4 +728,74 @@ footer {
 		}
 	}
 }
+
+.pdp-nav {
+		background: #f2f2f2;
+		border-top: 1px solid #f2f2f2;
+		border-bottom: 1px solid #f2f2f2;
+		margin-top: 2.5em;
+	ul {
+		list-style: none;
+		margin: 0 auto;
+		width: 602px;
+		li {
+			float: left;
+			a {
+				padding: 0 .75em;
+				&:hover {
+				}
+			}
+		}
+	}
+}
+
+.breadcrumb {
+	ul {
+		list-style: none;
+		font-size:  0.833em;
+		margin: 0;
+		li {
+			float: left;
+			padding-right: .6em;
+			margin: 0;
+			&:after {
+				content: "/";
+				padding-left: .6em;
+				color: #000;
+			}
+		}
+		.crumb-main-cat {
+			a {	
+				color: #000;
+				font-weight: bold;
+			}
+			&:after {
+				content: "";
+			}
+		}
+	}
+}
+
+.link-list {
+	margin: 0;
+	list-style: none;
+	li {
+		margin: 0;
+		margin: 0.3625em 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
