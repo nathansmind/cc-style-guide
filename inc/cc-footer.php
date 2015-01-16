@@ -65,3 +65,24 @@
 			<p class="font-extra-small" style="padding-top: 0;">©Competitivecyclist.com - All rights reserved.</p>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function(){
+			$('.men-menu').hover(function() {
+				$('.men').slideToggle("fast");
+			});	
+			$('.women-menu').hover(function() {
+				$('.women').slideToggle("fast");
+			});	
+			$('.components-menu').hover(function() {
+				$('.components').slideToggle("fast");
+			});	
+			$('.accsssories-menu').hover(function() {
+				$('.access').slideToggle("fast");
+			});	
+		});
+	</script>	
+</body>
+</html>

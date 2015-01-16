@@ -514,14 +514,14 @@ label {font-weight: bold;}
 .tabs {
 	width: 100%;
 	border-bottom: 1px solid $gray-lighter;
-	margin: 10PX;
+	padding: 0 0.75em;
 	position: relative;
 	li {
 		list-style: none;
 		float: left;
 		display: block;
 		cursor: pointer;
-		padding: 9px 20px;
+		padding: .35em .75em .3em;
 		position: relative; 
 		margin: 0;	
 		top: 1px;
@@ -785,7 +785,68 @@ footer {
 	}
 }
 
+// Flyouts
 
+
+.flyout {
+	border-top: 2px #ccc solid;
+	border-bottom: 2px #ccc solid;
+	width: 100%;
+	position: fixed;
+	top: 84px;	
+	background: #fff;
+	z-index: 101;
+	.flyout-wrapper {
+		min-width: 1000px;
+		padding: .75em;
+		max-width: 1400px;
+		margin: 0 auto;
+		position: relative;
+	}
+	&.men, &.women, &.components, &.access {
+		display: none;
+		.up-arrow {
+			position: absolute;
+			z-index: 102;
+			color: #ccc;
+			top: -14px;
+		}
+		img {float: left; width: 25%; margin-bottom: .75em;}
+		.links {
+			float: left;
+			width: 74%;
+			padding-left: 1%;
+			position: relative;
+			.tabs {
+				width: 100%;
+				margin-top: 0;
+			}
+			.link-column {
+				float: left;
+				width: 24%;
+				padding-right: 1%;
+				margin-top: .75em;
+				li {
+					border-bottom: 1px solid #fff;
+					cursor: pointer;
+					&:hover { border-bottom: 1px solid #ccc; }		
+				}
+			}
+		}
+	}
+}
+.men .up-arrow {
+	right: 510px;		
+}
+.women .up-arrow {
+	right: 440px;		
+}
+.components .up-arrow {
+	right: 345px;		
+}
+.access .up-arrow {
+	right: 235px;		
+}
 
 
 

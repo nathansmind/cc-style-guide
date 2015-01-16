@@ -1185,14 +1185,14 @@ label {
 .tabs {
   width: 100%;
   border-bottom: 1px solid #ccc;
-  margin: 10PX;
+  padding: 0 0.75em;
   position: relative; }
   .tabs li {
     list-style: none;
     float: left;
     display: block;
     cursor: pointer;
-    padding: 9px 20px;
+    padding: 0.35em 0.75em 0.3em;
     position: relative;
     margin: 0;
     top: 1px;
@@ -1406,6 +1406,62 @@ footer {
     margin: 0;
     margin: 0.3625em 0; }
 
+.flyout {
+  border-top: 2px #ccc solid;
+  border-bottom: 2px #ccc solid;
+  width: 100%;
+  position: fixed;
+  top: 84px;
+  background: #fff;
+  z-index: 101; }
+  .flyout .flyout-wrapper {
+    min-width: 1000px;
+    padding: 0.75em;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative; }
+  .flyout.men, .flyout.women, .flyout.components, .flyout.access {
+    display: none; }
+    .flyout.men .up-arrow, .flyout.women .up-arrow, .flyout.components .up-arrow, .flyout.access .up-arrow {
+      position: absolute;
+      z-index: 102;
+      color: #ccc;
+      top: -14px; }
+    .flyout.men img, .flyout.women img, .flyout.components img, .flyout.access img {
+      float: left;
+      width: 25%;
+      margin-bottom: 0.75em; }
+    .flyout.men .links, .flyout.women .links, .flyout.components .links, .flyout.access .links {
+      float: left;
+      width: 74%;
+      padding-left: 1%;
+      position: relative; }
+      .flyout.men .links .tabs, .flyout.women .links .tabs, .flyout.components .links .tabs, .flyout.access .links .tabs {
+        width: 100%;
+        margin-top: 0; }
+      .flyout.men .links .link-column, .flyout.women .links .link-column, .flyout.components .links .link-column, .flyout.access .links .link-column {
+        float: left;
+        width: 24%;
+        padding-right: 1%;
+        margin-top: 0.75em; }
+        .flyout.men .links .link-column li, .flyout.women .links .link-column li, .flyout.components .links .link-column li, .flyout.access .links .link-column li {
+          border-bottom: 1px solid #fff;
+          cursor: pointer; }
+          .flyout.men .links .link-column li:hover, .flyout.women .links .link-column li:hover, .flyout.components .links .link-column li:hover, .flyout.access .links .link-column li:hover {
+            border-bottom: 1px solid #ccc; }
+
+.men .up-arrow {
+  right: 510px; }
+
+.women .up-arrow {
+  right: 440px; }
+
+.components .up-arrow {
+  right: 345px; }
+
+.access .up-arrow {
+  right: 235px; }
+
 .color li {
   list-style: none;
   float: left;
@@ -1446,19 +1502,17 @@ footer {
 .pdp .wrapper {
   padding: 3.05em 10px; }
 .pdp .main-info-wrapper {
-  max-width: 1400px;
-  min-width: 1000px;
+  padding: 3.05em 10px;
+  width: 1000px;
   margin: 0 auto;
-  position: relative; }
+  padding: 10px; }
 .pdp hr {
   margin: 0; }
 .pdp .gallery {
-  position: absolute;
-  right: 370px;
-  left: 0;
+  width: 626px;
   float: left; }
   .pdp .gallery .main-image {
-    width: 80%;
+    width: 520px;
     margin: 0 auto;
     display: block; }
   .pdp .gallery small:first-child {
@@ -1542,7 +1596,7 @@ footer {
   .pdp .form-fields .field-flat {
     padding: 0; }
 .pdp .buy-box {
-  float: right;
+  float: left;
   width: 350px;
   margin-left: 1.5em; }
   .pdp .buy-box small {

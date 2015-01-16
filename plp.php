@@ -343,6 +343,3 @@
 	</div>
 	
 	<?php include 'inc/cc-footer.php'; ?>
-		
-</body>
-</html>
