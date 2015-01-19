@@ -627,15 +627,15 @@ label {font-weight: bold;}
 				background: #fff;
 			}
 		}
-		ul {
+		.main-ul {
 			position: absolute;
 			right: 0;
 			list-style: none;
 			margin: 0;
-			li {
+			> li {
 				float: left;
 				margin: 0;
-				a {
+				> a {
 					display: block;
 					padding: 15px 0.75em;
 					&:hover {background: #f2f2f2;}
@@ -793,6 +793,7 @@ footer {
 	border-bottom: 2px #ccc solid;
 	width: 100%;
 	position: fixed;
+	right: 0;
 	top: 84px;	
 	background: #fff;
 	z-index: 101;
@@ -803,14 +804,39 @@ footer {
 		margin: 0 auto;
 		position: relative;
 	}
+	.up-arrow {
+		position: absolute;
+		z-index: 102;
+		color: #ccc;
+		top: -14px;
+	}
+	&.bike {
+			display: none;
+			img {float: left; width: 100%; margin-bottom: .75em;}
+			.links {
+				float: left;
+				width: 100%;
+				padding-left: 1%;
+				position: relative;
+				.tabs {
+					width: 100%;
+					margin-top: 0;
+				}
+				.link-column {
+					float: left;
+					width: 24%;
+					padding-right: 1%;
+					margin-top: .75em;
+					li {
+						border-bottom: 1px solid #fff;
+						cursor: pointer;
+						&:hover { border-bottom: 1px solid #ccc; }		
+					}
+				}
+			}
+		}
 	&.men, &.women, &.components, &.access {
 		display: none;
-		.up-arrow {
-			position: absolute;
-			z-index: 102;
-			color: #ccc;
-			top: -14px;
-		}
 		img {float: left; width: 25%; margin-bottom: .75em;}
 		.links {
 			float: left;
@@ -834,6 +860,9 @@ footer {
 			}
 		}
 	}
+}
+.bike .up-arrow {
+	right: 565px;		
 }
 .men .up-arrow {
 	right: 510px;		

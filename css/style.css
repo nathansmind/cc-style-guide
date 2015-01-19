@@ -1291,18 +1291,18 @@ label {
       .main-header .main-nav form input {
         margin: 0 !important;
         background: #fff; }
-    .main-header .main-nav ul {
+    .main-header .main-nav .main-ul {
       position: absolute;
       right: 0;
       list-style: none;
       margin: 0; }
-      .main-header .main-nav ul li {
+      .main-header .main-nav .main-ul > li {
         float: left;
         margin: 0; }
-        .main-header .main-nav ul li a {
+        .main-header .main-nav .main-ul > li > a {
           display: block;
           padding: 15px 0.75em; }
-          .main-header .main-nav ul li a:hover {
+          .main-header .main-nav .main-ul > li > a:hover {
             background: #f2f2f2; }
 
 .targeter {
@@ -1411,6 +1411,7 @@ footer {
   border-bottom: 2px #ccc solid;
   width: 100%;
   position: fixed;
+  right: 0;
   top: 84px;
   background: #fff;
   z-index: 101; }
@@ -1420,13 +1421,37 @@ footer {
     max-width: 1400px;
     margin: 0 auto;
     position: relative; }
+  .flyout .up-arrow {
+    position: absolute;
+    z-index: 102;
+    color: #ccc;
+    top: -14px; }
+  .flyout.bike {
+    display: none; }
+    .flyout.bike img {
+      float: left;
+      width: 100%;
+      margin-bottom: 0.75em; }
+    .flyout.bike .links {
+      float: left;
+      width: 100%;
+      padding-left: 1%;
+      position: relative; }
+      .flyout.bike .links .tabs {
+        width: 100%;
+        margin-top: 0; }
+      .flyout.bike .links .link-column {
+        float: left;
+        width: 24%;
+        padding-right: 1%;
+        margin-top: 0.75em; }
+        .flyout.bike .links .link-column li {
+          border-bottom: 1px solid #fff;
+          cursor: pointer; }
+          .flyout.bike .links .link-column li:hover {
+            border-bottom: 1px solid #ccc; }
   .flyout.men, .flyout.women, .flyout.components, .flyout.access {
     display: none; }
-    .flyout.men .up-arrow, .flyout.women .up-arrow, .flyout.components .up-arrow, .flyout.access .up-arrow {
-      position: absolute;
-      z-index: 102;
-      color: #ccc;
-      top: -14px; }
     .flyout.men img, .flyout.women img, .flyout.components img, .flyout.access img {
       float: left;
       width: 25%;
@@ -1449,6 +1474,9 @@ footer {
           cursor: pointer; }
           .flyout.men .links .link-column li:hover, .flyout.women .links .link-column li:hover, .flyout.components .links .link-column li:hover, .flyout.access .links .link-column li:hover {
             border-bottom: 1px solid #ccc; }
+
+.bike .up-arrow {
+  right: 565px; }
 
 .men .up-arrow {
   right: 510px; }

@@ -70,7 +70,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 	<script type="text/javascript">
 		$('document').ready(function(){
-			$('.men-menu').hover(function() {
+			$('.bike-menu').hover(function() {
+				$('.bike').slideToggle("fast");
+			});				$('.men-menu').hover(function() {
 				$('.men').slideToggle("fast");
 			});	
 			$('.women-menu').hover(function() {
