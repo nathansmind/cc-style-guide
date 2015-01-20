@@ -1577,11 +1577,17 @@ footer {
   width: 1000px;
   margin: 0 auto;
   padding: 10px; }
+.pdp .pdp-breadcrumb {
+  margin-bottom: 2em; }
 .pdp hr {
   margin: 0; }
 .pdp .gallery {
   width: 626px;
-  float: left; }
+  float: left;
+  position: relative; }
+  .pdp .gallery .pdp-brand-logo {
+    position: absolute;
+    left: 0; }
   .pdp .gallery .main-image {
     width: 520px;
     margin: 0 auto;
@@ -1886,6 +1892,19 @@ footer {
         height: 34px;
         width: 34px;
         border: 1px solid #ccc; }
+  .plp .filter .rating .link-list > li {
+    height: 1.6em; }
+  .plp .filter .rating .star-ul {
+    margin: 0; }
+    .plp .filter .rating .star-ul li {
+      margin: 0;
+      float: left; }
+      .plp .filter .rating .star-ul li:hover {
+        border-bottom: none; }
+      .plp .filter .rating .star-ul li span {
+        font-size: 20px; }
+        .plp .filter .rating .star-ul li span.light {
+          opacity: 0.3; }
   .plp .filter .view-all {
     font-size: 0.833em;
     font-weight: bold; }

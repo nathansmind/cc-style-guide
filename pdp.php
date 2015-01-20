@@ -13,7 +13,7 @@
 	<?php include 'inc/cc-header.php'; ?>
 	
 	<div class="main-info-wrapper" style="padding: 1em 10px;">
-		<div class="breadcrumb">
+		<div class="breadcrumb pdp-breadcrumb">
 			<ul>
 				<li><a href="#">Bikes</a></li>
 				<li><a href="#">Road Bikes</a></li>
@@ -24,6 +24,7 @@
 		<div class="main-info">
 <!-- 			<h2 id="paragraph">Pinarello Dogma F8</h2> -->
 			<div class="gallery">
+				<img class="pdp-brand-logo" src="http://www.competitivecyclist.com/images/brand/thumb/pinlogo.jpg">
 				<img class="main-image" src="http://www.competitivecyclist.com/images/items/900/PIN/PIN000U/NAKRD.jpg">
 				<div>
 					<small>Options</small>

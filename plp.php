@@ -103,6 +103,66 @@
 					<li><a href="">> 50% off</a></li>
 				</ul>
 			</div>
+			<div class="rating">
+				<h6>Customer Review</h6>
+				<ul class="link-list">
+					<li><a href="">
+						<ul class="star-ul">
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li>& Up</li>
+						</ul>
+					</a></li>
+					<div class="clear"></div>
+					<li><a href="">
+						<ul class="star-ul">
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li>& Up</li>
+						</ul>
+					</a></li>
+					<div class="clear"></div>
+					<li><a href="">
+						<ul class="star-ul">
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li>& Up</li>
+						</ul>
+					</a></li>
+					<div class="clear"></div>
+					<li><a href="">
+						<ul class="star-ul">
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li>& Up</li>
+						</ul>
+					</a></li>
+					<div class="clear"></div>
+					<li><a href="">
+						<ul class="star-ul">
+							<li><span class="icon-cc-icon_star"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li><span class="icon-cc-icon_star light"></span></li>
+							<li>& Up</li>
+						</ul>
+					</a></li>
+					<div class="clear"></div>
+				</ul>
+			</div>
 			<div class="gearhead">
 				<img src="http://www.competitivecyclist.com/images/competitivecyclist/widgets/men-gearhead.jpg">
 				<h6>Can't Decide?</h6>

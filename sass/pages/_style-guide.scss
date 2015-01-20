@@ -45,10 +45,16 @@
 		margin: 0 auto;
 		padding: 10px;
 	}
+	.pdp-breadcrumb {margin-bottom: 2em;}
 	hr {margin: 0;}
 	.gallery{
 		width: 626px;
 		float: left;
+		position: relative;
+		.pdp-brand-logo {
+			position: absolute;
+			left: 0;
+		}
 		.main-image {
 			width:  520px;
 			margin: 0 auto;
@@ -419,6 +425,21 @@
 					&:nth-child(5) {background: #f93; margin-right: 0;}
 					&:nth-child(6) {background: #ff0;}
 					&:nth-child(7) {background: white; height: 34px; width: 34px; border: 1px solid #ccc;}
+				}
+			}
+		}
+		.rating {
+			.link-list > li {height: 1.6em;}
+			.star-ul {
+				margin: 0;
+				li {
+					&:hover {border-bottom: none;}
+					margin: 0;
+					float: left;
+					span {
+						font-size: 20px;
+						&.light {opacity: .3;}
+					}
 				}
 			}
 		}
