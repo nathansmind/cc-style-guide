@@ -410,45 +410,60 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, input, textarea {
 
 /* Headings
 -------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
   font-family: "ProximaNovaCond", arial, sans-serif; }
 
-h1 {
+.hh {
+  font-size: 2.488em;
+  line-height: 1em;
+  color: #CC0000;
+  font-weight: 300; }
+
+h1, .h1 {
   font-size: 2.074em;
   line-height: 1.1em;
   color: #CC0000;
   font-weight: 300; }
 
-h2 {
+h2, .h2 {
   font-size: 1.728em;
   line-height: 1.2em; }
 
-h3 {
+h3, .h3 {
   font-size: 1.44em;
   line-height: 1.3em;
   margin-bottom: 1.05em; }
 
-h4 {
+h4, .h4 {
   font-size: 1.2em;
   line-height: 1.4em;
   font-weight: bold;
   margin-bottom: 0; }
 
-h5 {
+h5, .h5 {
   font-size: 1em;
   line-height: 1.5em;
   font-weight: bold;
   margin-bottom: 0; }
 
-h6 {
+h6, .h6 {
   font-size: 1em;
   line-height: 1.5em;
   font-weight: bold;
   margin-bottom: 0; }
 
+/*
+h1, .h1 {font-size:1.602em; line-height: 1.1em; color: $red; font-weight: 300;} 
+h2, .h2 {font-size:1.424em;	line-height: 1.2em;}
+h3, .h3 {font-size:1.266em;	line-height: 1.3em;}
+h4, .h4 {font-size:1.125em;	line-height: 1.4em;
+h5, .h5 {font-size:1em; line-height: 1.5em; }
+h6, .h6 {font-size:0.889em;	line-height: 1.5em; }
+small {font-size:0.79em; line-height: 1.45em;}
+*/
 /* Text elements
 -------------------------------------------------------------- */
 p {
@@ -1428,14 +1443,34 @@ footer {
     top: -14px; }
   .flyout.bike {
     display: none; }
+    .flyout.bike h5 {
+      cursor: pointer; }
     .flyout.bike img {
       float: left;
+      width: 85%;
+      margin-bottom: 0.75em;
+      cursor: pointer; }
+    .flyout.bike .bike-sub {
+      float: left;
+      margin: 0 auto;
+      background: #f2f2f2;
       width: 100%;
-      margin-bottom: 0.75em; }
+      min-width: 1000px; }
+      .flyout.bike .bike-sub ul {
+        text-align: center;
+        margin: 0 auto;
+        width: 475px; }
+        .flyout.bike .bike-sub ul li {
+          float: left;
+          margin: 0; }
+          .flyout.bike .bike-sub ul li a {
+            display: block;
+            padding: 0.75em 1.5em; }
+          .flyout.bike .bike-sub ul li:last-child a {
+            color: #c00; }
     .flyout.bike .links {
       float: left;
       width: 100%;
-      padding-left: 1%;
       position: relative; }
       .flyout.bike .links .tabs {
         width: 100%;
@@ -1445,6 +1480,12 @@ footer {
         width: 24%;
         padding-right: 1%;
         margin-top: 0.75em; }
+        .flyout.bike .links .link-column .link-list {
+          width: 45%;
+          float: left;
+          margin-right: 5%; }
+          .flyout.bike .links .link-column .link-list img {
+            max-width: 100px; }
         .flyout.bike .links .link-column li {
           border-bottom: 1px solid #fff;
           cursor: pointer; }
@@ -1452,14 +1493,16 @@ footer {
             border-bottom: 1px solid #ccc; }
   .flyout.men, .flyout.women, .flyout.components, .flyout.access {
     display: none; }
+    .flyout.men h5, .flyout.women h5, .flyout.components h5, .flyout.access h5 {
+      cursor: pointer; }
     .flyout.men img, .flyout.women img, .flyout.components img, .flyout.access img {
       float: left;
       width: 25%;
       margin-bottom: 0.75em; }
     .flyout.men .links, .flyout.women .links, .flyout.components .links, .flyout.access .links {
       float: left;
-      width: 74%;
-      padding-left: 1%;
+      width: 73%;
+      padding-left: 2%;
       position: relative; }
       .flyout.men .links .tabs, .flyout.women .links .tabs, .flyout.components .links .tabs, .flyout.access .links .tabs {
         width: 100%;
@@ -1846,6 +1889,22 @@ footer {
   .plp .filter .view-all {
     font-size: 0.833em;
     font-weight: bold; }
+  .plp .filter .gearhead img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left; }
+  .plp .filter .gearhead h6 {
+    padding-top: 5px;
+    padding-left: 60px; }
+  .plp .filter .gearhead p {
+    padding-left: 60px;
+    margin-bottom: 0.8125em;
+    padding-bottom: 0.8125em;
+    border-bottom: 1px solid #f2f2f2; }
+  .plp .filter .gearhead span {
+    font-size: 16px;
+    padding-right: 3px; }
 .plp .product-list {
   float: left;
   width: 788px; }

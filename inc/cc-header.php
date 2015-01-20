@@ -33,20 +33,41 @@
 							<div class="flyout-wrapper">
 								<span class="icon-cc-icon_block-arrow-up up-arrow"></span>
 								<div class="links">
-									<div class="link-column">
+									<div class="link-column bike-image">
 										<h5>Road Bikes</h5>
-										<img src="http://placehold.it/400x400//ccc/999">
+										<img src="http://www.competitivecyclist.com/images/items/large/PIN/PIN000L/BLAGLO.jpg">
 									</div>
-									<div class="link-column">
+									<div class="link-column bike-image">
 										<h5>Mountain Bikes</h5>
-										<img src="http://placehold.it/400x400//ccc/999">
+										<img src="http://www.competitivecyclist.com/images/items/large/SNZ/SNZ001U/SATBLABL.jpg">
 									</div>
-									<div class="link-column">
+									<div class="link-column bike-image">
 										<h5>Cyclocross Bikes</h5>
-										<img src="http://placehold.it/400x400//ccc/999">
+										<img src="http://www.competitivecyclist.com/images/items/large/RID/RID001R/CAR.jpg">
 									</div>
 									<div class="link-column">
 										<h5>Shop By Brands</h5>
+
+<!--
+										<ul class="link-list">
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/borealis.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/intensecyclelogo.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/merlinlogo2013.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/pinlogo.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/ridleylogo2012.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/wilierlogo2012.jpg"></a></li>
+										</ul>
+										<ul class="link-list">
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/ibislogo2012.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/Juliana.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/niner2012logo.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/pivotlogo2012.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/santacruz2013.jpg"></a></li>
+											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/YetiLogo2011.jpg"></a></li>
+										</ul>
+-->
+
+
 										<ul class="link-list">
 											<li><a href="#">Borealis</a></li>
 											<li><a href="#">Ibis</a></li>
@@ -54,6 +75,8 @@
 											<li><a href="#">Juliana</a></li>
 											<li><a href="#">Merlin</a></li>
 											<li><a href="#">Niner</a></li>
+										</ul>
+										<ul class="link-list">
 											<li><a href="#">Pinarello</a></li>
 											<li><a href="#">Pivot</a></li>
 											<li><a href="#">Ridley</a></li>
@@ -63,6 +86,16 @@
 										</ul>
 									</div>
 								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="bike-sub">
+								<ul>
+									<li><a href="#" class="h5">Triathlon</a></li>
+									<li><a href="#" class="h5">Fat</a></li>
+									<li><a href="#" class="h5">Commuter</a></li>
+									<li><a href="#" class="h5">Kids'</a></li>
+									<li><a href="#" class="h5">Sale</a></li>
+								</ul>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -76,7 +109,7 @@
 						<div class="men flyout">
 							<div class="flyout-wrapper">
 								<span class="icon-cc-icon_block-arrow-up up-arrow"></span>
-								<img src="http://placehold.it/400x400//ccc/999">
+								<img src="img/mens.png">
 								
 								<div class="links">
 									<ul class="tabs clear">
@@ -134,7 +167,7 @@
 								</div>
 							</div>
 							<div class="clear"></div>
-						</div>
+							</div>
 					
 					</li>
 					<li class="women-menu">
@@ -145,7 +178,7 @@
 						<div class="women flyout">
 							<div class="flyout-wrapper">
 								<span class="icon-cc-icon_block-arrow-up up-arrow"></span>
-								<img src="http://placehold.it/400x400//ccc/999">
+								<img src="img/womens.png">
 								
 								<div class="links">
 									<ul class="tabs clear">
@@ -302,25 +335,25 @@
 											<li><a href="#">Helmets</a></li>
 											<li><a href="#">Hydration Packs & Bags</a></li>
 											<li><a href="#">Lights</a></li>
+											<li><a href="#">Lubricants & Maintenance</a></li>
 										</ul>
 									</div>
 									
 									<div class="link-column">
 										<h5 style="opacity: 0;">Space</h5>
 										<ul class="link-list">
-											<li><a href="#">Lubricants & Maintenance</a></li>
 											<li><a href="#">Nutrition & Performance</a></li>
 											<li><a href="#">Pumps & CO2 Inflators</a></li>
 											<li><a href="#">Seat Bags</a></li>
 											<li><a href="#">Shoes</a></li>
+											<li><a href="#">Sunglasses</a></li>
+											<li><a href="#">Tools & Maintenance</a></li>
 										</ul>
 									</div>
 									
 									<div class="link-column">
 										<h5 style="opacity: 0;">Space</h5>
 										<ul class="link-list">
-											<li><a href="#">Sunglasses</a></li>
-											<li><a href="#">Tools & Maintenance</a></li>
 											<li><a href="#">Trainers & Rollers</a></li>
 											<li><a href="#">Training Tools</a></li>
 											<li><a href="#">Travel</a></li>

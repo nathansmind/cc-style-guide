@@ -83,27 +83,37 @@
 			</div>
 			<div class="clear"></div>
 			<div class="filter-price">
-				<h6>Brands</h6>
+				<h6>Prices</h6>
 				<ul class="link-list">
 					<li><a href="">Under $25</a></li>
 					<li><a href="">$25 - $50</a></li>
 					<li><a href="">$50 - $75</a></li>
 					<li><a href="">$75 - $100</a></li>
 					<li><a href="">$100 - $125</a></li>
-					<li class="view-all"><a href="">View all brands »</a></li>
+					<li class="view-all"><a href="">View all prices »</a></li>
 				</ul>
 			</div>
 			<div class="sale">
-				<h6>Brands</h6>
+				<h6>Sale</h6>
 				<ul class="link-list">
 					<li><a href="">> 10% off</a></li>
 					<li><a href="">> 20% off</a></li>
 					<li><a href="">> 30% off</a></li>
 					<li><a href="">> 40% off</a></li>
 					<li><a href="">> 50% off</a></li>
-					<li class="view-all"><a href="">View all brands »</a></li>
 				</ul>
 			</div>
+			<div class="gearhead">
+				<img src="http://www.competitivecyclist.com/images/competitivecyclist/widgets/men-gearhead.jpg">
+				<h6>Can't Decide?</h6>
+				<p>Ask an expert.</p>
+				<ul class="link-list">
+					<li><a href="#"><span class="icon-cc-icon_phone"></span>1.888.276.7130</a></li>
+					<li><a href="#"><span class="icon-cc-icon_chat-box"></span>Live Chat</a></li>
+				</ul>
+			</div>
+			
+			
 		</div>
 		
 		

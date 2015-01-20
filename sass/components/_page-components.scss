@@ -811,37 +811,62 @@ footer {
 		top: -14px;
 	}
 	&.bike {
-			display: none;
-			img {float: left; width: 100%; margin-bottom: .75em;}
-			.links {
-				float: left;
-				width: 100%;
-				padding-left: 1%;
-				position: relative;
-				.tabs {
-					width: 100%;
-					margin-top: 0;
-				}
-				.link-column {
+		h5 {cursor: pointer;}
+		display: none;
+		img {float: left; width: 85%; margin-bottom: .75em; cursor: pointer;}
+		.bike-sub {
+			float: left;
+			margin: 0 auto;
+			background: #f2f2f2;
+			width: 100%;
+			min-width: 1000px;
+			ul {
+				text-align: center;
+				margin: 0 auto;
+				width: 475px;
+				li {
 					float: left;
-					width: 24%;
-					padding-right: 1%;
-					margin-top: .75em;
-					li {
-						border-bottom: 1px solid #fff;
-						cursor: pointer;
-						&:hover { border-bottom: 1px solid #ccc; }		
-					}
+					margin: 0;
+					a {display: block; padding: .75em 1.5em;}
+					&:last-child a {color: #c00;}
 				}
 			}
 		}
-	&.men, &.women, &.components, &.access {
-		display: none;
-		img {float: left; width: 25%; margin-bottom: .75em;}
 		.links {
 			float: left;
-			width: 74%;
-			padding-left: 1%;
+			width: 100%;
+			position: relative;
+			.tabs {
+				width: 100%;
+				margin-top: 0;
+			}
+			.link-column {
+				float: left;
+				width: 24%;
+				padding-right: 1%;
+				margin-top: .75em;
+				.link-list {
+					width: 45%;
+					float: left;
+					margin-right: 5%;
+					img {max-width: 100px;}
+				}
+				li {
+					border-bottom: 1px solid #fff;
+					cursor: pointer;
+					&:hover { border-bottom: 1px solid #ccc; }		
+				}
+			}
+		}
+	}
+	&.men, &.women, &.components, &.access {
+		h5 {cursor: pointer;}
+		display: none;
+		img {float: left; width: 25%; margin-bottom: .75em; }
+		.links {
+			float: left;
+			width: 73%;
+			padding-left: 2%;
 			position: relative;
 			.tabs {
 				width: 100%;
