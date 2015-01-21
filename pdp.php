@@ -23,10 +23,7 @@
 		<div class="clear"></div>
 		<div class="main-info">
 <!-- 			<h2 id="paragraph">Pinarello Dogma F8</h2> -->
-			<div class="gallery">
-				<img class="pdp-brand-logo" src="http://www.competitivecyclist.com/images/brand/thumb/pinlogo.jpg">
-				<img class="main-image" src="http://www.competitivecyclist.com/images/items/900/PIN/PIN000U/NAKRD.jpg">
-			</div>
+
 			<div class="thumbs">
 <!--
 				<div>
@@ -46,6 +43,7 @@
 					<li><span class="icon-cc-icon_arrow-right gallery-arrow"></span></li>
 				</ul>					
 			</div>
+			
 			<div class="buy-box">
 				<h2 id="paragraph">Pinarello F8 Dura-Ace 9000 Feature Road Bike - 2015</h2>
 <!-- 				<small>Item # PIV000M</small> -->
@@ -106,6 +104,11 @@
 					</div>
 					<span class="item-num">Item # PIV000M</span>
 				</div>
+			</div>
+	
+	        <div class="gallery">
+				<img class="pdp-brand-logo" src="http://www.competitivecyclist.com/images/brand/thumb/pinlogo.jpg">
+				<img class="main-image" src="http://www.competitivecyclist.com/images/items/900/PIN/PIN000U/NAKRD.jpg">
 			</div>
 		</div>
 	<div class="clear"></div>

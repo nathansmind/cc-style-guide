@@ -44,16 +44,12 @@
 		min-width: 1000px;
 		margin: 0 auto;
 		position: relative;
-		height: 1000px;
 	}
 	.pdp-breadcrumb {margin-bottom: 2em;}
 	.pdp-brand-logo {display: none;}
 	hr {margin: 0;}
 	.gallery{
-		position: absolute;
-		right: 370px;
-		left: 80px;		
-		float: left;
+		margin:0 370px 0 80px;
 		.main-image {
 			width:  80%;
 			margin: 0 auto;
@@ -61,6 +57,8 @@
 		}
 	}
 	.thumbs {
+		float:left;
+		
 		small:first-child {
 			margin-left: 44px;
 			color: #999;
