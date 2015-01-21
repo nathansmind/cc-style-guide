@@ -26,10 +26,14 @@
 			<div class="gallery">
 				<img class="pdp-brand-logo" src="http://www.competitivecyclist.com/images/brand/thumb/pinlogo.jpg">
 				<img class="main-image" src="http://www.competitivecyclist.com/images/items/900/PIN/PIN000U/NAKRD.jpg">
+			</div>
+			<div class="thumbs">
+<!--
 				<div>
 					<small>Options</small>
 					<small>Detail Images</small>
 				</div>
+-->
 				<ul>
 					<li><span class="icon-cc-icon_arrow-left gallery-arrow"></span></li>
 					<li><img src="http://www.competitivecyclist.com/images/items/tiny/PIN/PIN000M/S957BOB.jpg"></li>
@@ -42,11 +46,6 @@
 					<li><span class="icon-cc-icon_arrow-right gallery-arrow"></span></li>
 				</ul>					
 			</div>
-<!--
-			<div class="brand-logo">
-				<img src="img/pinlogo.jpg">
-			</div>
--->
 			<div class="buy-box">
 				<h2 id="paragraph">Pinarello F8 Dura-Ace 9000 Feature Road Bike - 2015</h2>
 <!-- 				<small>Item # PIV000M</small> -->
@@ -109,6 +108,7 @@
 				</div>
 			</div>
 		</div>
+	<div class="clear"></div>
 	</div> <!-- Wrapper -->
 	<div class="clear"></div>
 	<div class="pdp-nav">

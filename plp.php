@@ -12,8 +12,7 @@
 	
 	<?php include 'inc/cc-header.php'; ?>
 		
-	<div class="plp-top-targeter" style="background-image: url('http://placehold.it/1400x150/ccc/999');">
-	</div>
+	<div class="plp-top-targeter" style="background-image: url('http://placehold.it/1400x150/ccc/999');"></div>
 	
 	<div id="wrapper" class="wrapper" style="padding: 1em 10px 2em 10px; height: 57px;">
 		<div class="breadcrumb">

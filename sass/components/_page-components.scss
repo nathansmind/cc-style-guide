@@ -620,6 +620,14 @@ label {font-weight: bold;}
 			float: left;	
 			margin-bottom: .65em;
 		}
+		.search-icon {
+			position: absolute;
+			right: 10px;
+			top: 15px;
+			font-size: 22px;
+			color: #999;
+			background: #fff;		
+		}
 		form {
 			width: 100%;
 			input {

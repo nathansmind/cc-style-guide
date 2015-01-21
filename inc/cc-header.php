@@ -20,6 +20,7 @@
 				<div class="form-fields">	
 					<form class="field-flat light">
 						<input type="text" placeholder="Search bikes, clothing, & more..."/>
+						<span class="icon-cc-icon_search search-icon"></span>
 					</form>
 				</div>
 				

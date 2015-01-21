@@ -1301,6 +1301,13 @@ label {
       right: 620px;
       float: left;
       margin-bottom: 0.65em; }
+    .main-header .main-nav .search-icon {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      font-size: 22px;
+      color: #999;
+      background: #fff; }
     .main-header .main-nav form {
       width: 100%; }
       .main-header .main-nav form input {
@@ -1573,71 +1580,75 @@ footer {
 .pdp .wrapper {
   padding: 3.05em 10px; }
 .pdp .main-info-wrapper {
-  padding: 3.05em 10px;
-  width: 1000px;
+  max-width: 1400px;
+  min-width: 1000px;
   margin: 0 auto;
-  padding: 10px; }
+  position: relative;
+  height: 1000px; }
 .pdp .pdp-breadcrumb {
   margin-bottom: 2em; }
+.pdp .pdp-brand-logo {
+  display: none; }
 .pdp hr {
   margin: 0; }
 .pdp .gallery {
-  width: 626px;
-  float: left;
-  position: relative; }
-  .pdp .gallery .pdp-brand-logo {
-    position: absolute;
-    left: 0; }
+  position: absolute;
+  right: 370px;
+  left: 80px;
+  float: left; }
   .pdp .gallery .main-image {
-    width: 520px;
+    width: 80%;
     margin: 0 auto;
     display: block; }
-  .pdp .gallery small:first-child {
-    margin-left: 44px;
-    color: #999; }
-  .pdp .gallery small:last-child {
-    margin-left: 247px;
-    color: #999; }
-  .pdp .gallery ul {
-    list-style: none;
-    margin: 0;
-    height: 50px; }
-    .pdp .gallery ul li {
-      float: left;
-      margin: 0;
-      margin: 0 0.65em;
-      border: 2px solid rgba(255, 255, 255, 0);
-      padding: 2px;
-      background: #fff;
-      height: 50px;
-      cursor: pointer;
-      opacity: 0.5; }
-      .pdp .gallery ul li:hover {
-        border: 2px solid #f2f2f2;
-        opacity: 1; }
-      .pdp .gallery ul li:first-child, .pdp .gallery ul li:last-child {
-        border: none;
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        margin-top: 10px;
-        height: 36px; }
-        .pdp .gallery ul li:first-child span, .pdp .gallery ul li:last-child span {
-          display: block;
-          font-size: 20px;
-          color: #fff;
-          background-color: #bfbfbf;
-          padding: 8px;
-          border-radius: 2px;
-          opacity: 0;
-          transition: opacity 300ms ease, background-color 300ms ease; }
-          .pdp .gallery ul li:first-child span:hover, .pdp .gallery ul li:last-child span:hover {
-            background-color: #444; }
-      .pdp .gallery ul li:nth-child(2) {
-        border: 2px solid black;
-        opacity: 1; }
-    .pdp .gallery ul:hover .gallery-arrow {
+.pdp .thumbs small:first-child {
+  margin-left: 44px;
+  color: #999; }
+.pdp .thumbs small:last-child {
+  margin-left: 247px;
+  color: #999; }
+.pdp .thumbs ul {
+  float: left;
+  list-style: none;
+  margin: 0; }
+  .pdp .thumbs ul li {
+    margin: 0.65em 0;
+    border: 2px solid rgba(255, 255, 255, 0);
+    padding: 2px;
+    background: #fff;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.5;
+    height: 60px;
+    width: 60px; }
+    .pdp .thumbs ul li img {
+      width: 100%; }
+    .pdp .thumbs ul li:hover {
+      border: 2px solid #f2f2f2;
       opacity: 1; }
+    .pdp .thumbs ul li:first-child, .pdp .thumbs ul li:last-child {
+      display: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      margin-top: 10px;
+      height: 36px; }
+      .pdp .thumbs ul li:first-child span, .pdp .thumbs ul li:last-child span {
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        background-color: #bfbfbf;
+        padding: 8px;
+        border-radius: 2px;
+        opacity: 0;
+        transition: opacity 300ms ease, background-color 300ms ease; }
+        .pdp .thumbs ul li:first-child span:hover, .pdp .thumbs ul li:last-child span:hover {
+          background-color: #444; }
+    .pdp .thumbs ul li:nth-child(2) {
+      border: 2px solid black;
+      opacity: 1; }
+  .pdp .thumbs ul:hover .gallery-arrow {
+    opacity: 0; }
 .pdp .brand-logo {
   float: left;
   width: 350px;
@@ -1673,7 +1684,7 @@ footer {
   .pdp .form-fields .field-flat {
     padding: 0; }
 .pdp .buy-box {
-  float: left;
+  float: right;
   width: 350px;
   margin-left: 1.5em; }
   .pdp .buy-box small {
@@ -2053,6 +2064,12 @@ footer {
         opacity: 1; }
 .plp footer {
   margin-top: 3em; }
+
+.home .plp-top-targeter {
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 470px;
+  margin: 0 auto; }
 
 .icons .icon-grid {
   float: left; }
