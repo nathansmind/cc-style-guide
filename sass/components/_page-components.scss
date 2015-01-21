@@ -613,16 +613,19 @@ label {font-weight: bold;}
 			padding: 10px 0;
 		}
 		.form-fields {
-			padding-top: 0.55em;
+			padding-top: 0.65em;
+			padding-bottom: 0.65em;
 			position: absolute;
 			left: 162px;
 			right: 620px;	
 			float: left;	
-			margin-bottom: .65em;
+			border-left: 2px #ccc solid;
+			border-right: 2px solid #ccc;
 		}
 		.search-icon {
 			position: absolute;
-			right: 10px;
+			padding-right: 10px;
+			right:0px;
 			top: 15px;
 			font-size: 22px;
 			color: #999;
@@ -632,7 +635,11 @@ label {font-weight: bold;}
 			width: 100%;
 			input {
 				margin: 0 !important;
-				background: #fff;
+				background: rgba(255, 255, 255, 0);
+				border: rgba(255, 255, 255, 0);
+				&:focus {
+					border: rgba(255, 255, 255, 0);
+				}
 			}
 		}
 		.main-ul {
@@ -653,7 +660,15 @@ label {font-weight: bold;}
 	}
 }
 
+.non-fixed-header {
+	position: relative !important;
+	margin-bottom: -88px !important;
+}
+
+
+
 .targeter {
+	min-width: 1000px;
 	padding-top: 88px;			
 	p {
 		margin: 0;

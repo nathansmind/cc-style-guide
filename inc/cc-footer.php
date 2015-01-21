@@ -84,6 +84,11 @@
 			$('.accsssories-menu').hover(function() {
 				$('.access').slideToggle("fast");
 			});	
+						
+			if(WURFL.is_mobile){
+				$('.main-header').addClass( "non-fixed-header" );
+			}			
+			
 		});
 	</script>	
 </body>

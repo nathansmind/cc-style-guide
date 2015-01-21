@@ -6,6 +6,7 @@
 	<title>Design Server</title>
 	<link rel="stylesheet" href="css/style.css">	
 	<script src="js/script.js"></script>
+	<script type='text/javascript' src="//wurfl.io/wurfl.js"></script>
 <!-- 	<link rel="stylesheet" href="http://basehold.it/24"> -->
 </head>
 <body class="pdp">
@@ -110,6 +111,25 @@
 				<img class="pdp-brand-logo" src="http://www.competitivecyclist.com/images/brand/thumb/pinlogo.jpg">
 				<img class="main-image" src="http://www.competitivecyclist.com/images/items/900/PIN/PIN000U/NAKRD.jpg">
 			</div>
+			
+			<div class="thumbs2">
+				<div>
+					<small>Options</small>
+					<small>Detail Images</small>
+				</div>
+				<ul>
+					<li><span class="icon-cc-icon_arrow-left gallery-arrow"></span></li>
+					<li><img src="http://www.competitivecyclist.com/images/items/tiny/PIN/PIN000M/S957BOB.jpg"></li>
+					<li><img src="http://www.competitivecyclist.com/images/items/tiny/PIN/PIN000M/S950NAKRD.jpg"></li>
+					<li><img src="http://www.competitivecyclist.com/images/items/tiny/PIN/PIN000M/S952CBRD.jpg"></li>
+					<li><img src="http://www.competitivecyclist.com/images/items/tiny/PIN/PIN000M/S953BKYLFL.jpg"></li>
+					<li><img src="http://www.competitivecyclist.com/images/items/tiny/PIN/PIN000M/S950NAKRD_D8.jpg"></li>
+					<li><img src="http://www.competitivecyclist.com/images/items/tiny/PIN/PIN000M/S950NAKRD_D3.jpg"></li>
+					<li><img src="http://www.competitivecyclist.com/images/items/tiny/PIN/PIN000M/S950NAKRD_D9.jpg"></li>
+					<li><span class="icon-cc-icon_arrow-right gallery-arrow"></span></li>
+				</ul>					
+			</div>
+			
 		</div>
 	<div class="clear"></div>
 	</div> <!-- Wrapper -->
