@@ -41,7 +41,7 @@
 		padding: 3.05em 10px;
 	}
 	.main-info-wrapper {
-		max-width: 1400px;
+		max-width: 1000px;
 		min-width: 1000px;
 		margin: 0 auto;
 		position: relative;
@@ -413,13 +413,16 @@
 }
 
 .thumbs {
-	display: block;
-}
-.thumbs2 {
 	display: none;
 }
+.thumbs2 {
+	display: block;
+}
+.gallery {
+	margin: 0 370px 0 0 !important;
+}
 
-
+/*
 @media (max-width: 1100px) {
   .thumbs {
     display: none;
@@ -434,6 +437,7 @@
 	width:  80% !important;
 	}
 }
+*/
 
 
 

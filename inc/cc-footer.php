@@ -72,9 +72,12 @@
 		$('document').ready(function(){
 			$('.bike-menu').hover(function() {
 				$('.bike').slideToggle("fast");
-			});				$('.men-menu').hover(function() {
+			});				
+/*
+			$('.men-menu').hover(function() {
 				$('.men').slideToggle("fast");
 			});	
+*/
 			$('.women-menu').hover(function() {
 				$('.women').slideToggle("fast");
 			});	
