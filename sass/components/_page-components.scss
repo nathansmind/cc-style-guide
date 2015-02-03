@@ -44,9 +44,10 @@ $border-radius: 4px;
  
 table { border: 1px solid #f2f2f2; border-collapse: collapse; border-spacing: 0; }
 tbody {display: table-row-group;vertical-align: middle;border-color: inherit;}
-th { background: #f2f2f2; color: #999; font-size: 14px; }
+th { background: #f2f2f2; color: #333; font-size: 14px; }
 td { border-bottom: 1px solid #f2f2f2; }
 th,td { padding: 10px; display: table-cell; text-align: -webkit-center; text-align: center; }
+th p { margin-bottom: 0; }
 tfoot { font-style: italic; }
 caption { margin-bottom: 10px; text-align: -webkit-center; text-align: center; }
 
@@ -526,15 +527,19 @@ label {font-weight: bold;}
 		margin: 0;	
 		top: 1px;
 		transition: background 300ms ease;
+		background: $gray-lightest;
 		&:hover {
-			background: $gray-lightest;
+			background: #e2e2e2;
+			cursor: pointer;
 		}
+		&:last-child {border-left: 1px solid #fff;}
 	}
 	.active {
 		border: 1px solid $gray-lighter;
 		border-bottom: 1px solid $white;
 		top: 1px;
 		font-weight: 600;	
+		background: $white;
 		&:hover {
 			background: none;
 			cursor: default;
@@ -557,12 +562,13 @@ label {font-weight: bold;}
 			a {color: #fff; float: left;padding-top: 2px;}
 		}
 		.account-links {
-			ul {
+			position: relative;
+			> ul {
 				float: right;
 				margin: 0;
 				margin-right: -10px;
 				list-style: none;
-				li {
+				> li {
 					position: relative;
 					float: left;
 					margin: 11px 0;
@@ -576,13 +582,13 @@ label {font-weight: bold;}
 					.icon {font-size: 18px; position: absolute; left: 12px;top: -6px;}
 					.icon-cc-icon_arrow-down {position: absolute; right: 15px;top: -2px;}
 				}
-				li:nth-child(2) a {
+				> li:nth-child(2) a {
 					margin-right: 15px;
 				}
-				li:nth-child(3) a {
+				> li:nth-child(3) a {
 					margin-left: -20px;
 				}
-				li:nth-child(4) {
+				> li:nth-child(4) {
 					border-right: none;					
 					a {float: left;}
 				}
@@ -629,7 +635,8 @@ label {font-weight: bold;}
 			top: 15px;
 			font-size: 22px;
 			color: #999;
-			background: #fff;		
+			background: #fff;	
+			cursor: pointer;	
 		}
 		form {
 			width: 100%;
@@ -760,7 +767,7 @@ footer {
 	ul {
 		list-style: none;
 		margin: 0 auto;
-		width: 602px;
+		width: 645px;
 		li {
 			float: left;
 			a {
@@ -826,7 +833,8 @@ footer {
 	.flyout-wrapper {
 		min-width: 1000px;
 		padding: .75em;
-		max-width: 1400px;
+		max-width: 1200px;
+		padding: 0 1.5em;
 		margin: 0 auto;
 		position: relative;
 	}
@@ -835,11 +843,12 @@ footer {
 		z-index: 102;
 		color: #ccc;
 		top: -14px;
+		display: none;	
 	}
 	&.bike {
-		h5 {cursor: pointer;}
+		h5 {cursor: pointer; text-align: center; padding-right: 35px;}
 		display: none;
-		img {float: left; width: 85%; margin-bottom: .75em; cursor: pointer;}
+		img {float: left; width: 85%; margin: 0 auto; margin-bottom: .75em; cursor: pointer;}
 		.bike-sub {
 			float: left;
 			margin: 0 auto;
@@ -862,6 +871,7 @@ footer {
 			float: left;
 			width: 100%;
 			position: relative;
+			padding-top: .75em;
 			.tabs {
 				width: 100%;
 				margin-top: 0;
@@ -889,55 +899,342 @@ footer {
 	&.men, &.women, &.components, &.access {
 		h5 {cursor: pointer;}
 		display: none;
-		img {float: left; width: 25%; margin-bottom: .75em; }
+		img {float: left; width: 25%; margin-bottom: .75em; display: none;}
 		.links {
 			float: left;
-			width: 73%;
-			padding-left: 2%;
+			width: 100%;
 			position: relative;
+			padding-top: .75em;
+			.tab-wrap {border-bottom: 1px solid #ccc; margin-top: .75em;}
 			.tabs {
-				width: 100%;
-				margin-top: 0;
+				margin-top: .75em;
+				width: 240px;
+				margin: 0 auto;
+				border-bottom: none !important;
+				cursor: pointer;
+/*
+				li:nth-child(2){background: #f2f2f2;}
+				li:nth-child(3){background: #f2f2f2; border-left: 1px solid #fff;}
+*/
+
 			}
 			.link-column {
 				float: left;
-				width: 24%;
-				padding-right: 1%;
+				width: 23%;
+				padding-right: 2%;
 				margin-top: .75em;
-				li {
+				ul li {
 					border-bottom: 1px solid #fff;
 					cursor: pointer;
-					&:hover { border-bottom: 1px solid #ccc; }		
+					&:hover { border-bottom: 1px solid #ccc; }
+					&:last-child { margin-bottom: 1.5em; }		
+				}
+			}
+		}
+		.menu-sub {
+			float: left;
+			margin: 0 auto;
+			background: #f2f2f2;
+			width: 100%;
+			min-width: 1000px;
+			ul {
+				text-align: center;
+				margin: 0 auto;
+				width: 590px;
+				li {
+					float: left;
+					margin: 0;
+					a {display: block; padding: .75em 1.5em;}
 				}
 			}
 		}
 	}
 }
 .bike .up-arrow {
-	right: 565px;		
+	right: 470px;		
 }
 .men .up-arrow {
-	right: 510px;		
+	right: 410px;		
 }
 .women .up-arrow {
-	right: 440px;		
-}
-.components .up-arrow {
 	right: 345px;		
 }
+.components .up-arrow {
+	right: 245px;		
+}
 .access .up-arrow {
-	right: 235px;		
+	right: 135px;		
 }
 
 
-.men {display: block !important;}
+// Contact Us
+.contact-form {
+	display: none;
+	position: absolute;
+	background: #fff;
+	width: 400px;
+	padding: 1.5em;
+	border: 2px solid #ccc;
+	top: 19px;
+	left: -154px;
+	z-index: 103;
+	border-top: none;
+	.icon-cc-icon_close {
+		position: absolute;
+		color: #999 !important;
+		font-size: 24px;
+		right: .325em;
+		top: .325em;
+		cursor: pointer;
+	}
+	.icon-cc-icon_block-arrow-up {
+		position: absolute;
+		color: #fff !important;
+		font-size: 24px;
+		right: 48%;
+		top: -10px;
+	}
+	.top-links {
+		p{
+			float: left;
+			margin-bottom: 0;
+			font-size: 1.44em;
+			display: block;
+			margin-top: 2px;
+			margin-right: 1.5em;
+		}
+		a {
+			float: left;
+		}
+	}
+	.selector {
+		color: #333;
+		margin-top: 0.75em;
+	}
+	.form-fields {
+		padding-bottom: 0 !important;
+		label {
+			color: #333 !important;
+			font-size: 16px !important;
+			line-height: 24px !important;
+		}
+		p {
+			margin-bottom: 0;
+			float: left;
+			display: block;
+			margin-top: .75em;
+			margin-left: 1.5em;
+			a {color: #999 !important; text-decoration: underline; font-size: 16px;}
+		}
+		.flat-buttons {
+			float: left;
+		}
+	}
+}
 
 
+.account-form {
+	display: none;
+	position: absolute;
+	background: #fff;
+	width: 400px;
+	padding: 1.5em;
+	border: 2px solid #ccc;
+	top: 19px;
+	left: -154px;
+	z-index: 103;
+	border-top: none;
+	.icon-cc-icon_close {
+		position: absolute;
+		color: #999 !important;
+		font-size: 24px;
+		right: .325em;
+		top: .325em;
+		cursor: pointer;
+	}
+	.icon-cc-icon_block-arrow-up {
+		position: absolute;
+		color: #fff !important;
+		font-size: 24px;
+		right: 45%;
+		top: -10px;
+	}
+	.profile {
+		float: left;
+		img {
+			border-radius: 50%;
+		}
+	}
+	.account-menu-links {
+		margin-top: 0.325em;
+		margin-left: .75em;
+		float: left;
+		ul {
+			margin: 0 !important;
+			li {
+				float: left;
+				margin: 0;
+				a {
+					color: #999 !important;
+					font-size: 16px;
+					margin-right: .75em !important;
+					padding-right: .75em;
+					border-right: 1px #ccc solid;
+					&:hover {color: #333 !important;}
+				}
+				&:last-child a {border-right: none;}
+			}
+		}
+	}
+	.notifications {
+		h5 {margin-top: .75em;}
+		ul {
+			font-size: 16px;
+			margin: 0;
+			margin: 0 -1.3em;
+			height: 280px;
+			overflow-x: hidden;
+			li {
+				cursor: pointer;
+				font-size: 16px;
+				margin: 0;
+				padding: .75em 1.5em;
+				border-bottom: 1px solid #ccc;
+				background: #f2f2f2;
+				line-height: 1.125em !important;
+				&:first-child {border-top: 1px solid #ccc;} 
+				a {
+					color: #999 !important;
+					margin-right: 0 !important;
+					border-bottom: 1px solid #ccc;
+				}
+				img {float: left; margin-right: .75em; width: 35px; background: #fff;}
+			}
+		}
+	}
+}
 
+.autocomplete {
+	display: none;
+	width: 100%;
+	position: absolute;
+	.arrow-wrapper {
+		width: 100%;
+		max-width: 1400px;
+		margin: 0 auto;
+		position: relative;
+		span {
+			position: absolute;
+			left: 173px;
+			top: -14px;
+			color: #ccc;		
+		}
+	}
+	.auto-wrapper {
+		margin: 0 auto;
+		background: #fff;
+		width: 1043px;
+		padding: 1.5em;
+		border: 2px solid #ccc;
+		z-index: 103;
+		border-top: none;
+		.popular {
+			float: left;
+			background: #f2f2f2;
+			width: 18%;
+			margin: -1.5em 0 -1.5em -1.5em;
+			padding: 1.5em;
+			height: 470px;
+			li {border-bottom: 1px #f2f2f2 solid;}
+			li:hover {border-bottom: 1px #ccc solid; cursor: pointer;}
+			span {
+				font-weight: bold;
+				color: #333;
+			}
+		}
+		.products {
+			float: left;
+			width: 57%;
+			padding: 0 2%;
+			.search-products {
+				margin: 0;
+				li {
+					cursor: pointer;
+					border-bottom: 1px #fff solid;
+					float: left;
+					margin-right: 1.5em;
+					&:nth-child(4n+4) {
+						margin-right: 0;
+					}
+					.brand, .name {
+						text-align: center;
+						margin-bottom: 0;
+					}
+					.name {font-size: 14px;}
+					.brand {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		.extras {
+			float: left;
+			width: 18%;
+			img {cursor: pointer;}
+			.link-list {
+				li {border-bottom: 1px #fff solid;}
+				li:hover {border-bottom: 1px #ccc solid;}
+			}
+		}
+	}
+}
 
-
-
-
-
+.modal-container {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.67);
+	z-index: 200;
+	.modal {
+		width: 350px;
+		margin: 0 auto;
+		margin-top: 10%;
+		background: #fff;
+		padding: 3em;
+		position: relative;
+		.close {
+			position: absolute;
+			right: .325em;
+			top: .325em;
+			font-size: 30px;
+			color: #999;
+			cursor: pointer;
+		}
+		.form-fields {
+			padding: 0;
+			.flat-buttons {
+				float: left;
+			}
+			.cancel {
+				float: left;
+				margin: .75em 1.5em;
+			}
+		}
+		.create-account {
+			margin: 0 -3em -3em -3em;
+			background: #333;
+			padding: 1.5em 3em;
+			margin-top: 1.5em;
+			p {
+				margin-bottom: 0;
+				color: #fff;
+				a {color: #fff; text-decoration: underline;}
+			}
+		}
+	}
+}
 
 

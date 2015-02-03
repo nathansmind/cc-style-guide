@@ -6,9 +6,9 @@
 				<p>Get the latest news & promotions</p>
 				<div class="form-fields">	
 					<form class="field-flat dark">
-						<input type="text" placeholder="Your email address"/>
+						<input type="text" placeholder="Enter your email here"/>
 						<div class="flat-buttons">
-							<a href="#" class="btn-flat dark">Submit</a>
+							<a href="#" class="btn-flat dark">Sign up</a>
 						</div>
 					</form>
 				</div>
@@ -65,33 +65,101 @@
 			<p class="font-extra-small" style="padding-top: 0;">©Competitivecyclist.com - All rights reserved.</p>
 		</div>
 	</footer>
+	<div class="modal-container">
+		<div class="modal">
+			<span class="icon-cc-icon_close close"></span>
+			<h3>Sign In</h3>
+			<div class="form-fields">
+				<form class="field-flat light">
+					<label for="text_field">Email</label><br>
+					<input type="text" placeholder="">
+					<label for="text_field">Password</label><br>
+					<input type="text" placeholder="">
+					<div class="clear"></div>
+					<div class="flat-buttons">
+						<a href="#" class="btn-flat dark">Sign In</a>
+					</div>
+					<a href="#" class="cancel">Cancel</a>
+				</form>	
+				<div class="clear"></div>	
+				<div class="create-account">
+					<p>New here? <a href="">Create a new account</a></p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="js/hoverIndent.js"></script>
 	<script type="text/javascript">
 		$('document').ready(function(){
-			$('.bike-menu').hover(function() {
+			
+			// Menus
+			$('.bike-menu').hoverIntent(function() {
 				$('.bike').slideToggle("fast");
 			});				
-/*
-			$('.men-menu').hover(function() {
+			$('.men-menu').hoverIntent(function() {
 				$('.men').slideToggle("fast");
 			});	
-*/
-			$('.women-menu').hover(function() {
+			$('.women-menu').hoverIntent(function() {
 				$('.women').slideToggle("fast");
 			});	
-			$('.components-menu').hover(function() {
+			$('.components-menu').hoverIntent(function() {
 				$('.components').slideToggle("fast");
 			});	
-			$('.accsssories-menu').hover(function() {
+			$('.accsssories-menu').hoverIntent(function() {
 				$('.access').slideToggle("fast");
 			});	
-						
+			$('.js-contact-us').click(function() {
+				$('.contact-form').slideToggle("fast");
+			});	
+			$('.js-account-link').click(function() {
+				$('.account-form').slideToggle("fast");
+			});	
+			$('.js-search-input').focus(function() {
+				$('.autocomplete').slideToggle("fast");
+			});	
+			
+			// iPad no stick header
 			if(WURFL.is_mobile){
 				$('.main-header').addClass( "non-fixed-header" );
-			}			
+			}	
 			
+			// Modal 
+			$('.sign-in').click(function(){
+				$('.modal-container').show();
+			});
+			$('.modal .close').click(function(){
+				$('.modal-container').hide();
+			});
+			
+			// Mouse leave pop up
+/*
+
+			function addEvent(obj, evt, fn) {
+			    if (obj.addEventListener) {
+			        obj.addEventListener(evt, fn, false);
+			    }
+			    else if (obj.attachEvent) {
+			        obj.attachEvent("on" + evt, fn);
+			    }
+			}
+			addEvent(window,"load",function(e) {
+			    addEvent(document, "mouseout", function(e) {
+			        e = e ? e : window.event;
+			        var from = e.relatedTarget || e.toElement;
+			        if (!from || from.nodeName == "HTML") {
+						$('.modal-container').show()
+			        }
+			    });
+			});	
+			
+*/
+			
+					
 		});
 	</script>	
 </body>

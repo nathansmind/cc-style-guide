@@ -6,8 +6,76 @@
 				</div>
 				<div class="account-links">
 					<ul>
-						<li><span class="icon icon-cc-icon_chat-box"></span><a href="#">Contact Us</a></li>
-						<li><span class="icon icon-cc-icon_profile"></span><a href="#">Nathan Smith<span class="icon-cc-icon_arrow-down"></span></a></li>
+						<li>
+							<span class="icon icon-cc-icon_chat-box"></span><a href="#" class="js-contact-us">Contact Us</a>
+							<div class="contact-form">
+								<span class="icon-cc-icon_block-arrow-up"></span>
+								<span class="icon-cc-icon_close close"></span>
+								<div class="top-links">
+									<h4>Talk to an Expert</h4>
+									<p>1.888.276.7130</p>
+									<a href="#" class="btn-flat dark">Chat Now</a>
+								</div>
+								<div class="clear"></div>
+								<div class="form-fields">
+									<h4>Send us an email</h4>	
+									<form class="field-flat light">
+										<label for="text_field">Name</label><br>
+										<input type="text" placeholder="">
+										<label for="text_field">Email</label><br>
+										<input type="text" placeholder="">
+										<div class="clear"></div>
+											<div class="selector">
+											<div>Pick a topic <span class="icon-cc-icon_drop-down"></span></div>
+											<div class="select-menu">
+												
+											</div>
+										</div>
+										<div class="clear"></div>
+										<label for="text_area">Message</label><br>	
+										<textarea placeholder=""></textarea>
+										<div class="flat-buttons">
+											<a href="#" class="btn-flat dark">Submit</a>
+										</div>
+										<p>Visit our <a href="#">contact us</a> page for more help.</p>
+									</form>								
+								</div>
+							</div>
+						</li>
+						<li><span class="icon icon-cc-icon_profile"></span><a href="#" class="js-account-link">Nathan Smith<span class="icon-cc-icon_arrow-down"></span></a>
+							<div class="account-form">
+								<span class="icon-cc-icon_block-arrow-up"></span>
+								<div class="profile">
+									<img src="http://placehold.it/50x50">
+								</div>
+								<div class="account-menu-links">
+									<h4>User Name</h4>
+									<ul>
+										<li><a href="#">My Profile</a></li>
+										<li><a href="#">My Account</a></li>
+										<li><a href="#" class="sign-in">Sign Out</a></li>
+									</ul>
+								</div>
+								<div class="clear"></div>
+								<div class="notifications">
+									<h5>Notifications</h5>
+									<ul>
+										<li><a href="">John Johnson</a> is now following you.</li>
+										<li><a href="">Bill Cooly</a> is now following you.</li>
+										<li><a href="">Cal Monsoon</a> is now following you.</li>
+										<li><a href="">Gerald Calhoon</a> is now following you.</li>
+										<li><a href="">Carson Coombs</a> is now following you.</li>
+										<li><img src="img/strava-echelon.png">New Activity: TMR - Trowing back a quick 40 before meetings.</li>
+										<li><a href="">John Johnson</a> is now following you.</li>
+										<li><a href="">Bill Cooly</a> is now following you.</li>
+										<li><a href="">Cal Monsoon</a> is now following you.</li>
+										<li><a href="">Gerald Calhoon</a> is now following you.</li>
+										<li><a href="">Carson Coombs</a> is now following you.</li>
+										<li><img src="img/strava-echelon.png">New Activity: TMR - Trowing back a quick 40 before meetings.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
 						<li><a href="#">Order Status</a></li>
 						<li><span class="icon icon-cc-icon_cart"></span><a href="#">Cart<span class="cart-number">2</span></a></li>
 				</div>
@@ -19,7 +87,7 @@
 				<img class="cc-logo" src="http://www.competitivecyclist.com/images/competitivecyclist/header/logo.png?1392664938">
 				<div class="form-fields">	
 					<form class="field-flat light">
-						<input type="text" placeholder="Search bikes, clothing, & more..."/>
+						<input type="text" class="js-search-input" placeholder="Search bikes, clothing, & more..."/>
 						<span class="icon-cc-icon_search search-icon"></span>
 					</form>
 				</div>
@@ -47,28 +115,7 @@
 										<img src="http://www.competitivecyclist.com/images/items/large/RID/RID001R/CAR.jpg">
 									</div>
 									<div class="link-column">
-										<h5>Shop By Brands</h5>
-
-<!--
-										<ul class="link-list">
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/borealis.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/intensecyclelogo.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/merlinlogo2013.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/pinlogo.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/ridleylogo2012.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/wilierlogo2012.jpg"></a></li>
-										</ul>
-										<ul class="link-list">
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/ibislogo2012.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/Juliana.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/niner2012logo.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/pivotlogo2012.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/santacruz2013.jpg"></a></li>
-											<li><a href="#"><img src="http://www.competitivecyclist.com/images/brand/thumb/YetiLogo2011.jpg"></a></li>
-										</ul>
--->
-
-
+										<h5 style="text-align: left;">Shop By Brands</h5>
 										<ul class="link-list">
 											<li><a href="#">Borealis</a></li>
 											<li><a href="#">Ibis</a></li>
@@ -76,6 +123,7 @@
 											<li><a href="#">Juliana</a></li>
 											<li><a href="#">Merlin</a></li>
 											<li><a href="#">Niner</a></li>
+											<li class="view-all"><a href="#">View all brands »</a></li>
 										</ul>
 										<ul class="link-list">
 											<li><a href="#">Pinarello</a></li>
@@ -113,11 +161,13 @@
 								<img src="img/mens.png">
 								
 								<div class="links">
-									<ul class="tabs clear">
-										<li class="active">Road</li>
-										<li>Mountain</li>
-										<li>Triathlon</li>		
-									</ul>		
+									<div class="tab-wrap">
+										<ul class="tabs clear">
+											<li class="active">Road</li>
+											<li>Mountain</li>
+											<li>Triathlon</li>		
+										</ul>	
+									</div>	
 									<div class="clear"></div>
 									
 									<div class="link-column">
@@ -168,7 +218,15 @@
 								</div>
 							</div>
 							<div class="clear"></div>
+							<div class="menu-sub">
+								<ul>
+									<li><a href="#" class="h5">Buyer's Guide:</a></li>
+									<li><a href="#">Jacket Buyer's Guide</a></li>
+									<li><a href="#">Bib Tight Buyer's Guide</a></li>
+								</ul>
 							</div>
+							<div class="clear"></div>
+						</div>
 					
 					</li>
 					<li class="women-menu">
@@ -182,11 +240,13 @@
 								<img src="img/womens.png">
 								
 								<div class="links">
-									<ul class="tabs clear">
-										<li class="active">Road</li>
-										<li>Mountain</li>
-										<li>Triathlon</li>		
-									</ul>		
+									<div class="tab-wrap">
+										<ul class="tabs clear">
+											<li class="active">Road</li>
+											<li>Mountain</li>
+											<li>Triathlon</li>		
+										</ul>	
+									</div>	
 									<div class="clear"></div>
 									
 									<div class="link-column">
@@ -251,6 +311,15 @@
 								<img src="http://placehold.it/400x400//ccc/999">
 								
 								<div class="links">
+									
+									<div class="link-column">
+										<h5>Build Kits</h5>
+										<ul class="link-list">
+											<li><a href="#">Road Bike Gruppos</a></li>
+											<li><a href="#">Mountain Bike Gruppos</a></li>
+										</ul>
+									</div>
+
 									<div class="link-column">
 										<h5>Wheels, Tires, Tubes</h5>
 										<ul class="link-list">
@@ -260,13 +329,12 @@
 											<li><a href="#">Wheels</a></li>
 										</ul>
 									</div>
-									
+																		
 									<div class="link-column">
 										<h5>Drivetrain, Brakes</h5>
 										<ul class="link-list">
 											<li><a href="#">Bottom Brackets</a></li>
 											<li><a href="#">Brakes</a></li>
-											<li><a href="#">Build Kits</a></li>
 											<li><a href="#">Cables</a></li>
 											<li><a href="#">Cassettes & Cogs</a></li>
 											<li><a href="#">Chains & Chain Guides</a></li>
@@ -294,11 +362,6 @@
 										</ul>
 									</div>
 									
-									<div class="link-column">
-										<h5></h5>
-										<ul class="link-list">
-										</ul>
-									</div>
 								</div>
 							</div>
 							<div class="clear"></div>
@@ -364,6 +427,14 @@
 								</div>
 							</div>
 							<div class="clear"></div>
+							<div class="menu-sub">
+								<ul>
+									<li><a href="#" class="h5">Buyer's Guide:</a></li>
+									<li><a href="#">Maintenance Buyer's Guide</a></li>
+									<li><a href="#">Helmet Buyer's Guide</a></li>
+								</ul>
+							</div>
+							<div class="clear"></div>
 						</div>
 					
 					</li>
@@ -374,8 +445,114 @@
 			</div>
 			<div class="clear"></div>
 		</div>
+		
+		<div class="autocomplete">
+			<div class="arrow-wrapper">
+				<span class="icon-cc-icon_block-arrow-up"></span>
+			</div>
+			<div class="auto-wrapper">
+				<div class="popular">
+					<h4>Popular Searches</h4>
+					<ul class="link-list">
+						<li><a href="#"><span>Bike</span>s</a></li>
+						<li><a href="#"><span>Bike</span> stands</a></li>
+						<li><a href="#"><span>Bike</span> racks</a></li>
+						<li><a href="#"><span>Bike</span> fits</a></li>
+						<li><a href="#"><span>Bike</span> lights</a></li>
+						<li><a href="#"><span>Bike</span> cases</a></li>
+						<li><a href="#"><span>Bike</span> shoes</a></li>
+						<li><a href="#"><span>Bike</span> helmets</a></li>
+						<li><a href="#"><span>Bike</span> bags</a></li>
+					</ul>
+				</div>
+				<div class="products">
+					<h4>Products</h4>
+					<ul class="search-products">
+						<li>
+							<img src="http://placehold.it/120x120">
+							<div class="product-info">
+								<p class="brand">Product brand</p>
+								<p class="name">Product name</p>
+							</div>
+						</li>
+						<li>
+							<img src="http://placehold.it/120x120">
+							<div class="product-info">
+								<p class="brand">Product brand</p>
+								<p class="name">Product name</p>
+							</div>
+						</li>
+						<li>
+							<img src="http://placehold.it/120x120">
+							<div class="product-info">
+								<p class="brand">Product brand</p>
+								<p class="name">Product name</p>
+							</div>
+						</li>
+						<li>
+							<img src="http://placehold.it/120x120">
+							<div class="product-info">
+								<p class="brand">Product brand</p>
+								<p class="name">Product name</p>
+							</div>
+						</li>
+						<li>
+							<img src="http://placehold.it/120x120">
+							<div class="product-info">
+								<p class="brand">Product brand</p>
+								<p class="name">Product name</p>
+							</div>
+						</li>
+						<li>
+							<img src="http://placehold.it/120x120">
+							<div class="product-info">
+								<p class="brand">Product brand</p>
+								<p class="name">Product name</p>
+							</div>
+						</li>
+						<li>
+							<img src="http://placehold.it/120x120">
+							<div class="product-info">
+								<p class="brand">Product brand</p>
+								<p class="name">Product name</p>
+							</div>
+						</li>
+						<li>
+							<img src="http://placehold.it/120x120">
+							<div class="product-info">
+								<p class="brand">Product brand</p>
+								<p class="name">Product name</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="extras">
+					<div class="brands-list">
+						<h4>Brands</h4>
+						<ul>
+							<li><img src="http://placehold.it/100x50">
+							<li><img src="http://placehold.it/100x50">
+							<li><img src="http://placehold.it/100x50">
+							<li><img src="http://placehold.it/100x50">
+						</ul>
+						
+					</div>
+					<div class="cats-list">
+						<h4>Categories</h4>
+						<ul class="link-list">
+							<li><a href="#">Men's Road Bike Clothing</a></li>
+							<li><a href="#">Men's Mountain Bike Clothing</a></li>
+							<li><a href="#">Women's Mountain Bike Clothing</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div> <!-- Autosearch End -->
 	</header>
 	<div class="targeter">
 		<p>Spend $150, Get $20 Using Coupon Code Holiday20»</p>
 	</div>
+	
+
 	

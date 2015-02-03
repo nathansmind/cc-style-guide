@@ -60,6 +60,7 @@
 				<p class="price">$5,750.00<span class="reg-price">$6,600.00</span><span class="percent-off">15% off</span></p>
 				<div class="size-info">
 					<ul>
+						<li><a href="#">Sizing</a></li>
 						<li><a href="#">Geometry</a></li>
 						<li><a href="#">Fit Guide</a></li>
 					</ul>
@@ -138,6 +139,7 @@
 		<ul>
 			<li><a href="#">Configure & Buy</a></li>
 			<li><a href="#">Description & Specs</a></li>
+			<li><a href="#">Sizing</a></li>
 			<li><a href="#">Geometry</a></li>
 			<li><a href="#">Reviews & Community</a></li>
 		</ul>
@@ -218,38 +220,62 @@
 	</div><!--  Wrapper -->
 	<div class="clear"></div>
 	<hr>
+	<div class="wrapper sizing-chart">
+		
+		<h3>Sizing Chart</h3>
+		<p class="sub-head">Nomad size by rider height</p>
+		
+		<table>
+			<tbody>
+				<tr>
+					<th>S</th>
+					<td id="combined_cell0" class="s"><span>5'0"</span><span class="size-bar"></span><span>5'5"</span></td>
+				</tr>
+				<tr>
+					<th>M</th>
+					<td id="combined_cell0" class="m"><span>5'5"</span><span class="size-bar"></span><span>5'10"</span></td>
+				</tr>
+				<tr>
+					<th>L</th>
+					<td id="combined_cell0" class="l"><span>5'10"</span><span class="size-bar"></span><span>6'2"</span></td>
+				</tr>
+				<tr>
+					<th>XL</th>
+					<td id="combined_cell0" class="xl"><span>6'2"</span><span class="size-bar"></span><span>6'6"</span></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="clear"></div>
+		<div class="units">
+			<a href="#" class="active">Inches</a>|
+			<a href="#">Centimeters</a>
+		</div>
+		
+	</div>
+	<hr>
 	<div class="wrapper chart">		
 		<h3>Geometry Chart</h3>
 		<p class="sub-head">Kobh</p>
 		<table>
 			<tbody>
 				<tr><th id="combined_cell124" title="combined_cell124_free_">&nbsp;</th><th id="combined_cell125" title="combined_cell125_free_">
-				<p>Seat Tube</p>
-				<p>(c-t)</p>
+				<p>Seat Tube (c-t)</p>
 				</th><th id="combined_cell126" title="combined_cell126_free_">
-				<p>Effective Top Tube</p>
-				<p>(eTT)</p>
+				<p>Effective Top Tube (eTT)</p>
 				</th><th id="combined_cell127" title="combined_cell127_free_">
-				<p>Stack</p>
-				<p>(S)</p>
+				<p>Stack (S)</p>
 				</th><th id="combined_cell128" title="combined_cell128_free_">
-				<p>Reach</p>
-				<p>(R)</p>
+				<p>Reach (R)</p>
 				</th><th id="combined_cell129" title="combined_cell129_free_">
-				<p>Set Back</p>
-				<p>(SB)</p>
+				<p>Set Back (SB)</p>
 				</th><th id="combined_cell130" title="combined_cell130_free_">
-				<p>Head Tube</p>
-				<p>(HT)</p>
+				<p>Head Tube (HT)</p>
 				</th><th id="combined_cell131" title="combined_cell131_free_">
-				<p>Head Tube Angle</p>
-				<p>(HT<sup>o</sup>)</p>
+				<p>Head Tube Angle (HT<sup>o</sup>)</p>
 				</th><th id="combined_cell132" title="combined_cell132_free_">
-				<p>Seat Tube Angle</p>
-				<p>(ST<sup>o</sup>)</p>
+				<p>Seat Tube Angle (ST<sup>o</sup>)</p>
 				</th><th id="combined_cell133" title="combined_cell133_free_">
-				<p>Chainstay</p>
-				<p>(CS)</p>
+				<p>Chainstay (CS)</p>
 				</th></tr>
 				<tr>
 					<th>48</th>
